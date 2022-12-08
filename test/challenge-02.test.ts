@@ -1,5 +1,5 @@
 import { describe, expect } from "vitest";
-import { countHours } from "./challenge-02";
+import { countHours } from "@/challenge-02";
 
 const TEST_VALUES = [
   {

@@ -1,5 +1,5 @@
 import { describe, expect } from "vitest";
-import { fitsInOneBox } from "./challenge-04";
+import { fitsInOneBox } from "@/challenge-04";
 
 const TEST_VALUES = [
   {

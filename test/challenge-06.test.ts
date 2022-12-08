@@ -1,5 +1,5 @@
 import { describe, expect } from "vitest";
-import { createCube } from "./challenge-06";
+import { createCube } from "@/challenge-06";
 
 const TEST_VALUES = [
   {

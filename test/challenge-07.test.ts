@@ -1,5 +1,5 @@
 import { describe, expect } from "vitest";
-import { getGiftsToRefill } from "./challenge-07";
+import { getGiftsToRefill } from "@/challenge-07";
 
 const TEST_VALUES = [
   {

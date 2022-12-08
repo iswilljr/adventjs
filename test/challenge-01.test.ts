@@ -1,5 +1,5 @@
 import { describe, expect } from "vitest";
-import { wrapping } from "./challenge-01";
+import { wrapping } from "@/challenge-01";
 
 const TEST_VALUES = [
   {
