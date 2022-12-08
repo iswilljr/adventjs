@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "prepare": "husky install",
-    "test": "vitest run --reporter verbose"
+    "test": "vitest run"
   },
   "devDependencies": {
     "husky": "8.0.2",
