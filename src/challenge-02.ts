@@ -1,4 +1,10 @@
 // score: 121
 export function countHours(year: number, holidays: string[]) {
-  return holidays.filter((holiday) => ![0, 6].includes(new Date(`${holiday}/${year}`).getDay())).length * 2;
+  return holidays.reduce(
+    (hours, holiday) =>
+      /0|6/.test(`${new Date(`${holiday}/${year}`).getDay()}`)
+        ? hours
+        : hours + 2,
+    0
+  )
 }
