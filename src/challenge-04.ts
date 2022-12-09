@@ -3,6 +3,6 @@ export function fitsInOneBox(
   boxes: Array<{ w: number; h: number; l: number }>
 ) {
   return boxes
-    .sort((a, b) => a.l - b.l)
-    .every((b, i) => i == 0 || (b.w > boxes[i - 1].w && b.h > boxes[i - 1].h))
+    .sort(({ l }, b) => l - b.l)
+    .every(({ w, h }, i, { [i - 1]: c }) => 1 > i || (h > c.h && w > c.w))
 }
