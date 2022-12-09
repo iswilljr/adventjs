@@ -6,9 +6,13 @@ export function countHours(year: number, holidays: string[]) {
       (hours, holiday, i) => (
         !/0|6/.test(`${new Date(`${holiday}/${year}`).getDay()}`) &&
           (hours += 2),
-        !/0|6/.test(
-          `${new Date(`${holidays[holidays.length - i - 1]}/${year}`).getDay()}`
-        ) && (hours += 2),
+        holidays.length - i - 1 !== i &&
+          !/0|6/.test(
+            `${new Date(
+              `${holidays[holidays.length - i - 1]}/${year}`
+            ).getDay()}`
+          ) &&
+          (hours += 2),
         hours
       ),
       0
