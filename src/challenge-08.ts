@@ -7,5 +7,3 @@ export function checkPart(part: string) {
       part[i + 1] === part[part.length - i - 1]
   )
 }
-
-console.log(checkPart('uwu'))
