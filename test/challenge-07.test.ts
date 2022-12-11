@@ -41,7 +41,7 @@ const TEST_CASES = [
 ]
 
 describe('Challenge #7: Doing gifts inventory', () => {
-  it('#T should return a number', () => {
+  it('#T should return an array', () => {
     const gifts = getGiftsToRefill([], [], [])
     expect(Array.isArray(gifts) ? 'array' : typeof gifts).toBe('array')
   })

@@ -7,14 +7,8 @@ const TEST_CASES = [
     expected:
       '  /\\_\\_\\_\\\n /\\/\\_\\_\\_\\\n/\\/\\/\\_\\_\\_\\\n\\/\\/\\/_/_/_/\n \\/\\/_/_/_/\n  \\/_/_/_/',
   },
-  {
-    args: 1,
-    expected: '/\\_\\\n\\/_/',
-  },
-  {
-    args: 2,
-    expected: ' /\\_\\_\\\n/\\/\\_\\_\\\n\\/\\/_/_/\n \\/_/_/',
-  },
+  { args: 1, expected: '/\\_\\\n\\/_/' },
+  { args: 2, expected: ' /\\_\\_\\\n/\\/\\_\\_\\\n\\/\\/_/_/\n \\/_/_/' },
   {
     args: 10,
     expected:
@@ -23,7 +17,7 @@ const TEST_CASES = [
 ]
 
 describe('Challenge #6: Creating xmas decorations', () => {
-  it('#T should return a number', () => {
+  it('#T should return a string', () => {
     expect(typeof createCube(1)).toBe('string')
   })
 

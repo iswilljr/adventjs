@@ -16,7 +16,7 @@ const TEST_CASES = [
 ]
 
 describe('Challenge #1: Automating Christmas gift wrapping!', () => {
-  it('#T should return a array', () => {
+  it('#T should return an array', () => {
     const wrapped = wrapping([])
     expect(Array.isArray(wrapped) ? 'array' : typeof wrapped).toBe('array')
   })
