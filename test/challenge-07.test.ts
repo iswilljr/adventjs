@@ -1,49 +1,57 @@
-import { describe, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { getGiftsToRefill } from '@/challenge-07'
 
-const TEST_VALUES = [
+const TEST_CASES = [
   {
-    name: 'return type',
-    value: Array.isArray(getGiftsToRefill([], [], [])),
-    expect: true,
+    args: [
+      ['bici', 'coche', 'bici', 'bici'],
+      ['coche', 'bici', 'muñeca', 'coche'],
+      ['bici', 'pc', 'pc'],
+    ],
+    expected: ['muñeca', 'pc'],
   },
   {
-    name: 'getGiftsToRefill(a1, a2, a3)',
-    value: JSON.stringify(
-      getGiftsToRefill(
-        ['bici', 'coche', 'bici', 'bici'],
-        ['coche', 'bici', 'muñeca', 'coche'],
-        ['bici', 'pc', 'pc']
-      )
-    ),
-    expect: JSON.stringify(['muñeca', 'pc']),
+    args: [[], [], []],
+    expected: [],
   },
   {
-    name: 'getGiftsToRefill([], [], [])',
-    value: JSON.stringify(getGiftsToRefill([], [], [])),
-    expect: JSON.stringify([]),
+    args: [
+      ['a', 'a'],
+      ['a', 'a'],
+      ['a', 'a'],
+    ],
+    expected: [],
   },
   {
-    name: 'getGiftsToRefill(2)',
-    value: JSON.stringify(getGiftsToRefill(['a', 'a'], ['a', 'a'], ['a', 'a'])),
-    expect: JSON.stringify([]),
+    args: [
+      ['a', 'a'],
+      ['b', 'b'],
+      ['c', 'c'],
+    ],
+    expected: ['a', 'b', 'c'],
   },
   {
-    name: "getGiftsToRefill(['a', 'a'], ['b', 'b'], ['c', 'c'])",
-    value: JSON.stringify(getGiftsToRefill(['a', 'a'], ['b', 'b'], ['c', 'c'])),
-    expect: JSON.stringify(['a', 'b', 'c']),
-  },
-  {
-    name: "getGiftsToRefill(['a', 'b'], ['c', 'd'], ['e', 'f'])",
-    value: JSON.stringify(getGiftsToRefill(['a', 'b'], ['c', 'd'], ['e', 'f'])),
-    expect: JSON.stringify(['a', 'b', 'c', 'd', 'e', 'f']),
+    args: [
+      ['a', 'b'],
+      ['c', 'd'],
+      ['e', 'f'],
+    ],
+    expected: ['a', 'b', 'c', 'd', 'e', 'f'],
   },
 ]
 
-describe('Challenge #7: Doing gifts inventory', test => {
-  for (const testValue of TEST_VALUES) {
-    test(testValue.name, () => {
-      expect(testValue.value).toBe(testValue.expect)
-    })
-  }
+describe('Challenge #7: Doing gifts inventory', () => {
+  it('#T should return a number', () => {
+    const gifts = getGiftsToRefill([], [], [])
+    expect(Array.isArray(gifts) ? 'array' : typeof gifts).toBe('array')
+  })
+
+  it.each(TEST_CASES)(
+    '# should return $expected when the input is $args',
+    ({ args, expected }) => {
+      expect(
+        getGiftsToRefill(...(args as [string[], string[], string[]]))
+      ).toEqual(expected)
+    }
+  )
 })

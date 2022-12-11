@@ -1,40 +1,36 @@
-import { describe, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { createCube } from '@/challenge-06'
 
-const TEST_VALUES = [
+const TEST_CASES = [
   {
-    name: 'return type',
-    value: typeof createCube(1),
-    expect: 'string',
-  },
-  {
-    name: 'createCube(3)',
-    value: createCube(3),
-    expect:
+    args: 3,
+    expected:
       '  /\\_\\_\\_\\\n /\\/\\_\\_\\_\\\n/\\/\\/\\_\\_\\_\\\n\\/\\/\\/_/_/_/\n \\/\\/_/_/_/\n  \\/_/_/_/',
   },
   {
-    name: 'createCube(1)',
-    value: createCube(1),
-    expect: '/\\_\\\n\\/_/',
+    args: 1,
+    expected: '/\\_\\\n\\/_/',
   },
   {
-    name: 'createCube(2)',
-    value: createCube(2),
-    expect: ' /\\_\\_\\\n/\\/\\_\\_\\\n\\/\\/_/_/\n \\/_/_/',
+    args: 2,
+    expected: ' /\\_\\_\\\n/\\/\\_\\_\\\n\\/\\/_/_/\n \\/_/_/',
   },
   {
-    name: 'createCube(10)',
-    value: createCube(10),
-    expect:
+    args: 10,
+    expected:
       '         /\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\\n        /\\/\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\\n       /\\/\\/\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\\n      /\\/\\/\\/\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\\n     /\\/\\/\\/\\/\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\\n    /\\/\\/\\/\\/\\/\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\\n   /\\/\\/\\/\\/\\/\\/\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\\n  /\\/\\/\\/\\/\\/\\/\\/\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\\n /\\/\\/\\/\\/\\/\\/\\/\\/\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\\n/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\\n\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/_/_/_/_/_/_/_/_/_/_/\n \\/\\/\\/\\/\\/\\/\\/\\/\\/_/_/_/_/_/_/_/_/_/_/\n  \\/\\/\\/\\/\\/\\/\\/\\/_/_/_/_/_/_/_/_/_/_/\n   \\/\\/\\/\\/\\/\\/\\/_/_/_/_/_/_/_/_/_/_/\n    \\/\\/\\/\\/\\/\\/_/_/_/_/_/_/_/_/_/_/\n     \\/\\/\\/\\/\\/_/_/_/_/_/_/_/_/_/_/\n      \\/\\/\\/\\/_/_/_/_/_/_/_/_/_/_/\n       \\/\\/\\/_/_/_/_/_/_/_/_/_/_/\n        \\/\\/_/_/_/_/_/_/_/_/_/_/\n         \\/_/_/_/_/_/_/_/_/_/_/',
   },
 ]
 
-describe('Challenge #6: Creating xmas decorations', test => {
-  for (const testValue of TEST_VALUES) {
-    test(testValue.name, () => {
-      expect(testValue.value).toBe(testValue.expect)
-    })
-  }
+describe('Challenge #6: Creating xmas decorations', () => {
+  it('#T should return a number', () => {
+    expect(typeof createCube(1)).toBe('string')
+  })
+
+  it.each(TEST_CASES)(
+    '# should return $expected when the input is $args',
+    ({ args, expected }) => {
+      expect(createCube(args)).toEqual(expected)
+    }
+  )
 })

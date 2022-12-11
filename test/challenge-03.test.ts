@@ -1,33 +1,27 @@
-import { describe, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { distributeGifts } from '@/challenge-03'
 
-const TEST_VALUES = [
+const TEST_CASES = [
   {
-    name: 'return type',
-    value: typeof distributeGifts(
+    args: [
       ['book', 'doll', 'ball'],
-      ['dasher', 'dancer']
-    ),
-    expect: 'number',
+      ['dasher', 'dancer'],
+    ],
+    expected: 2,
   },
   {
-    name: 'distributeGifts(["book", "doll", "ball"], ["dasher", "dancer"])',
-    value: distributeGifts(['book', 'doll', 'ball'], ['dasher', 'dancer']),
-    expect: 2,
+    args: [
+      ['a', 'b', 'c'],
+      ['d', 'e'],
+    ],
+    expected: 1,
   },
   {
-    name: "distributeGifts(['a', 'b', 'c'], ['d', 'e'])",
-    value: distributeGifts(['a', 'b', 'c'], ['d', 'e']),
-    expect: 1,
+    args: [['videogames', 'console'], ['will']],
+    expected: 0,
   },
   {
-    name: "it should return 0 if reindeers can't carry any pack: distributeGifts(['videogames', 'console'], ['will'])",
-    value: distributeGifts(['videogames', 'console'], ['will']),
-    expect: 0,
-  },
-  {
-    name: "distributeGifts(['game', 'videoconsole', 'computer'], ['midudev', 'pheralb', 'codingwithdani', 'carlosble', 'blasco', 'facundocapua', 'madeval', 'memxd'])",
-    value: distributeGifts(
+    args: [
       ['game', 'videoconsole', 'computer'],
       [
         'midudev',
@@ -38,13 +32,12 @@ const TEST_VALUES = [
         'facundocapua',
         'madeval',
         'memxd',
-      ]
-    ),
-    expect: 5,
+      ],
+    ],
+    expected: 5,
   },
   {
-    name: "distributeGifts(['music'], ['midudev', 'pheralb', 'codingwithdani', 'carlosble', 'blasco', 'facundocapua', 'madeval', 'memxd'])",
-    value: distributeGifts(
+    args: [
       ['music'],
       [
         'midudev',
@@ -55,16 +48,25 @@ const TEST_VALUES = [
         'facundocapua',
         'madeval',
         'memxd',
-      ]
-    ),
-    expect: 26,
+      ],
+    ],
+    expected: 26,
   },
 ]
 
-describe('Challenge #3: How many packs of gifts can Santa carry?', test => {
-  for (const testValue of TEST_VALUES) {
-    test(testValue.name, () => {
-      expect(testValue.value).toBe(testValue.expect)
-    })
-  }
+describe('Challenge #3: How many packs of gifts can Santa carry?', () => {
+  it('#T should return a number', () => {
+    expect(
+      typeof distributeGifts(['book', 'doll', 'ball'], ['dasher', 'dancer'])
+    ).toBe('number')
+  })
+
+  it.each(TEST_CASES)(
+    '# should return $expected when the input is $args',
+    ({ args, expected }) => {
+      expect(distributeGifts(...(args as [string[], string[]]))).toEqual(
+        expected
+      )
+    }
+  )
 })

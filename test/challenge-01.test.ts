@@ -1,42 +1,30 @@
-import { describe, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { wrapping } from '@/challenge-01'
 
-const TEST_VALUES = [
+const TEST_CASES = [
   {
-    name: 'return type',
-    value: Array.isArray(wrapping([])),
-    expect: true,
-  },
-  {
-    name: 'wrapping(gifts)',
-    value: JSON.stringify(wrapping(['cat', 'game', 'socks'])),
-    expect: JSON.stringify([
+    args: ['cat', 'game', 'socks'],
+    expected: [
       '*****\n*cat*\n*****',
       '******\n*game*\n******',
       '*******\n*socks*\n*******',
-    ]),
+    ],
   },
-  {
-    name: 'wrapping(["will"])',
-    value: JSON.stringify(wrapping(['will'])),
-    expect: JSON.stringify(['******\n*will*\n******']),
-  },
-  {
-    name: 'wrapping(["a"])',
-    value: JSON.stringify(wrapping(['a'])),
-    expect: JSON.stringify(['***\n*a*\n***']),
-  },
-  {
-    name: 'wrapping an empty array should return an empty array',
-    value: JSON.stringify(wrapping([])),
-    expect: JSON.stringify([]),
-  },
+  { args: ['will'], expected: ['******\n*will*\n******'] },
+  { args: ['a'], expected: ['***\n*a*\n***'] },
+  { args: [], expected: [] },
 ]
 
-describe('Challenge #1: Automating Christmas gift wrapping!', test => {
-  for (const testValue of TEST_VALUES) {
-    test(testValue.name, () => {
-      expect(testValue.value).toBe(testValue.expect)
-    })
-  }
+describe('Challenge #1: Automating Christmas gift wrapping!', () => {
+  it('#T should return a array', () => {
+    const wrapped = wrapping([])
+    expect(Array.isArray(wrapped) ? 'array' : typeof wrapped).toBe('array')
+  })
+
+  it.each(TEST_CASES)(
+    '# should return $expected when the input is $args',
+    ({ args, expected }) => {
+      expect(wrapping(args)).toEqual(expected)
+    }
+  )
 })

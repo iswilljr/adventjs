@@ -1,65 +1,62 @@
-import { describe, expect } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { fitsInOneBox } from '@/challenge-04'
 
-const TEST_VALUES = [
+const TEST_CASES = [
   {
-    name: 'return type',
-    value: typeof fitsInOneBox([
-      { l: 1, w: 1, h: 1 },
-      { l: 2, w: 2, h: 2 },
-    ]),
-    expect: 'boolean',
-  },
-  {
-    name: 'fitsInOneBox([{ l: 1, w: 1, h: 10 }, { l: 3, w: 3, h: 12 }, { l: 2, w: 2, h: 1 }])',
-    value: fitsInOneBox([
+    args: [
       { l: 1, w: 1, h: 10 },
       { l: 3, w: 3, h: 12 },
       { l: 2, w: 2, h: 1 },
-    ]),
-    expect: false,
+    ],
+    expected: false,
   },
   {
-    name: 'fitsInOneBox([{ l: 1, w: 1, h: 1 }, { l: 2, w: 2, h: 2 }])',
-    value: fitsInOneBox([
+    args: [
       { l: 1, w: 1, h: 1 },
       { l: 2, w: 2, h: 2 },
-    ]),
-    expect: true,
+    ],
+    expected: true,
   },
   {
-    name: 'fitsInOneBox([{ l: 1, w: 1, h: 1 }, { l: 2, w: 2, h: 2 }, { l: 3, w: 1, h: 3 }])',
-    value: fitsInOneBox([
+    args: [
       { l: 1, w: 1, h: 1 },
       { l: 2, w: 2, h: 2 },
       { l: 3, w: 1, h: 3 },
-    ]),
-    expect: false,
+    ],
+    expected: false,
   },
   {
-    name: 'fitsInOneBox([{ l: 1, w: 1, h: 1 }, { l: 2, w: 2, h: 2 }, { l: 2, w: 10, h: 2}])',
-    value: fitsInOneBox([
+    args: [
       { l: 1, w: 1, h: 1 },
       { l: 2, w: 2, h: 2 },
       { l: 2, w: 10, h: 2 },
-    ]),
-    expect: false,
+    ],
+    expected: false,
   },
   {
-    name: 'fitsInOneBox([{ l: 1, w: 1, h: 1 }, { l: 3, w: 3, h: 3 }, { l: 2, w: 2, h: 2 }])',
-    value: fitsInOneBox([
+    args: [
       { l: 1, w: 1, h: 1 },
       { l: 3, w: 3, h: 3 },
       { l: 2, w: 2, h: 2 },
-    ]),
-    expect: true,
+    ],
+    expected: true,
   },
 ]
 
-describe('Challenge #4: Box inside a box and another...', test => {
-  for (const testValue of TEST_VALUES) {
-    test(testValue.name, () => {
-      expect(testValue.value).toBe(testValue.expect)
-    })
-  }
+describe('Challenge #4: Box inside a box and another...', () => {
+  it('#T should return a boolean', () => {
+    expect(
+      typeof fitsInOneBox([
+        { l: 1, w: 1, h: 1 },
+        { l: 2, w: 2, h: 2 },
+      ])
+    ).toBe('boolean')
+  })
+
+  it.each(TEST_CASES)(
+    '# should return $expected when the input is $args',
+    ({ args, expected }) => {
+      expect(fitsInOneBox(args)).toEqual(expected)
+    }
+  )
 })
