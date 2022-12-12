@@ -1,3 +1,4 @@
+// score: 360
 export function getCompleted(part: string, total: string) {
   const [h1, m1, s1] = part.split(':')
   const [h2, m2, s2] = total.split(':')

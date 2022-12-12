@@ -1,3 +1,4 @@
+// score: 300
 export function countTime(leds: number[]) {
   const newLeds = leds.join('').split('1')
   newLeds[0] += newLeds.pop()

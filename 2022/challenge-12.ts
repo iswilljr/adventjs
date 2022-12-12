@@ -1,8 +1,4 @@
-export interface Sleight {
-  name: string
-  consumption: number
-}
-
+// score: 320
 export function selectSleigh(distance: number, sleighs: Sleight[]) {
   let maxW = 20
   return sleighs.reduce(
@@ -12,4 +8,9 @@ export function selectSleigh(distance: number, sleighs: Sleight[]) {
         : s.name,
     null as null | string
   )
+}
+
+export interface Sleight {
+  name: string
+  consumption: number
 }

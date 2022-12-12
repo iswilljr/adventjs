@@ -1,3 +1,4 @@
+// score: 260
 export function checkJump(heights: number[]) {
   const maxIndex = heights.indexOf(Math.max(...heights))
   const before = heights.slice(0, maxIndex)
