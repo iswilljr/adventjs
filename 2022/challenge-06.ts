@@ -1,13 +1,14 @@
-// score: 160
+// score: 200
 export function createCube(size: number) {
-  let cube: string[] = [],
-    topRight = '_\\'.repeat(size),
-    bottomRight = '_/'.repeat(size)
-  for (let i = 0; i < size; i++) {
-    const space = ' '.repeat(i),
-      s = size - i
-    cube.unshift(`${space}${'/\\'.repeat(s)}${topRight}`)
-    cube.push(`${space}${'\\/'.repeat(s)}${bottomRight}`)
-  }
-  return cube.join('\n')
+  return [
+    ...Array.from(
+      { length: size },
+      (_v, i) =>
+        `${' '.repeat(size - i - 1)}${'/\\'.repeat(i + 1)}${'_\\'.repeat(size)}`
+    ),
+    ...Array.from(
+      { length: size },
+      (_v, i) => `${' '.repeat(i)}${'\\/'.repeat(size - i)}${'_/'.repeat(size)}`
+    ),
+  ].join('\n')
 }
