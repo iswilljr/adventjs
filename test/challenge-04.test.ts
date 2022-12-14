@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
-import { fitsInOneBox } from '@/challenge-04'
+import { fitsInOneBox, Box } from '@/challenge-04'
 
-const TEST_CASES = [
+const TEST_CASES: TestCases<Box[], boolean>[] = [
   {
     args: [
       { l: 1, w: 1, h: 10 },

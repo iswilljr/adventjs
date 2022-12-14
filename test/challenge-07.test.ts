@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { getGiftsToRefill } from '@/challenge-07'
 
-const TEST_CASES = [
+const TEST_CASES: TestCases<[string[], string[], string[]], string[]>[] = [
   {
     args: [
       ['bici', 'coche', 'bici', 'bici'],
@@ -49,9 +49,7 @@ describe('Challenge #7: Doing gifts inventory', () => {
   it.each(TEST_CASES)(
     '# should return $expected when the input is $args',
     ({ args, expected }) => {
-      expect(
-        getGiftsToRefill(...(args as [string[], string[], string[]]))
-      ).toEqual(expected)
+      expect(getGiftsToRefill(...args)).toEqual(expected)
     }
   )
 })

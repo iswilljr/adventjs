@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { getCompleted } from '@/challenge-11'
 
-const TEST_CASES = [
+const TEST_CASES: TestCases<[string, string], string>[] = [
   { args: ['01:00:00', '03:00:00'], expected: '1/3' },
   { args: ['02:00:00', '04:00:00'], expected: '1/2' },
   { args: ['01:00:00', '01:00:00'], expected: '1/1' },
@@ -19,7 +19,7 @@ describe('Challenge #11: Santa Claus is Scrum Master', () => {
   it.each(TEST_CASES)(
     '# should return $expected when the input is $args',
     ({ args, expected }) => {
-      expect(getCompleted(...(args as [string, string]))).toEqual(expected)
+      expect(getCompleted(...args)).toEqual(expected)
     }
   )
 })

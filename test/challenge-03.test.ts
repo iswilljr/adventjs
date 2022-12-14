@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { distributeGifts } from '@/challenge-03'
 
-const TEST_CASES = [
+const TEST_CASES: TestCases<[string[], string[]], number>[] = [
   {
     args: [
       ['book', 'doll', 'ball'],
@@ -64,9 +64,7 @@ describe('Challenge #3: How many packs of gifts can Santa carry?', () => {
   it.each(TEST_CASES)(
     '# should return $expected when the input is $args',
     ({ args, expected }) => {
-      expect(distributeGifts(...(args as [string[], string[]]))).toEqual(
-        expected
-      )
+      expect(distributeGifts(...args)).toEqual(expected)
     }
   )
 })

@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { getMaxGifts } from '@/challenge-05'
 
-const TEST_CASES = [
+const TEST_CASES: TestCases<[number[], number, number], number>[] = [
   { args: [[12, 3, 11, 5, 7], 20, 3], expected: 20 },
   { args: [[50], 15, 1], expected: 0 },
   { args: [[50], 100, 1], expected: 50 },
@@ -20,9 +20,7 @@ describe("Challenge #5: Optimizing Santa's trips", () => {
   it.each(TEST_CASES)(
     '# should return $expected when the input is $args',
     ({ args, expected }) => {
-      expect(getMaxGifts(...(args as [number[], number, number]))).toEqual(
-        expected
-      )
+      expect(getMaxGifts(...args)).toEqual(expected)
     }
   )
 })

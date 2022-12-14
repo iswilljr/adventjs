@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { createCube } from '@/challenge-06'
 
-const TEST_CASES = [
+const TEST_CASES: TestCases<number, string>[] = [
   {
     args: 3,
     expected:

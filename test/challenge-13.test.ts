@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { getFilesToBackup } from '@/challenge-13'
 
-const TEST_CASES = [
+const TEST_CASES: TestCases<[number, [number, number][]], number[]>[] = [
   {
     args: [
       1546300800,
@@ -55,9 +55,7 @@ describe('Challenge #11: Santa Claus is Scrum Master', () => {
   it.each(TEST_CASES)(
     '# should return $expected when the input is $args',
     ({ args, expected }) => {
-      expect(
-        getFilesToBackup(...(args as [number, [number, number][]]))
-      ).toEqual(expected)
+      expect(getFilesToBackup(...args)).toEqual(expected)
     }
   )
 })

@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { wrapping } from '@/challenge-01'
 
-const TEST_CASES = [
+const TEST_CASES: TestCases<string[], string[]>[] = [
   {
     args: ['cat', 'game', 'socks'],
     expected: [

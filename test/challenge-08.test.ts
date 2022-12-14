@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { checkPart } from '@/challenge-08'
 
-const TEST_CASES = [
+const TEST_CASES: TestCases<string, boolean>[] = [
   { args: 'uwu', expected: true },
   { args: 'will', expected: false },
   { args: 'lolol', expected: true },

@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { selectSleigh, Sleight } from '@/challenge-12'
 
-const TEST_CASES = [
+const TEST_CASES: TestCases<[number, Sleight[]], string | null>[] = [
   {
     args: [
       1,
@@ -59,7 +59,7 @@ describe('Challenge #11: Santa Claus is Scrum Master', () => {
   it.each(TEST_CASES)(
     '# should return $expected when the input is $args',
     ({ args, expected }) => {
-      expect(selectSleigh(...(args as [number, Sleight[]]))).toEqual(expected)
+      expect(selectSleigh(...args)).toEqual(expected)
     }
   )
 })

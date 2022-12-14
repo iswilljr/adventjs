@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { countHours } from '@/challenge-02'
 
-const TEST_CASES = [
+const TEST_CASES: TestCases<[number, string[]], number>[] = [
   { args: [2023, ['01/06', '04/01', '12/25']], expected: 4 },
   { args: [2022, ['01/06', '04/01', '12/25']], expected: 4 },
   {
@@ -22,7 +22,7 @@ describe('Challenge #2: Nobody wants to do extra hours at work', () => {
   it.each(TEST_CASES)(
     '# should return $expected when the input is $args',
     ({ args, expected }) => {
-      expect(countHours(...(args as [number, string[]]))).toEqual(expected)
+      expect(countHours(...args)).toEqual(expected)
     }
   )
 })
