@@ -44,7 +44,7 @@ const TEST_CASES: TestCases<[number, [number, number][]], number[]>[] = [
   { args: [1556300600, []], expected: [] },
 ]
 
-describe('Challenge #11: Santa Claus is Scrum Master', () => {
+describe('Challenge #13: Backups for Santa Claus files', () => {
   it('#T should return an array', () => {
     const backupIds = getFilesToBackup(1556300600, [])
     return expect(Array.isArray(backupIds) ? 'array' : typeof backupIds).toBe(

@@ -46,7 +46,7 @@ const TEST_CASES: TestCases<[number, Sleight[]], string | null>[] = [
   },
 ]
 
-describe('Challenge #11: Santa Claus is Scrum Master', () => {
+describe('Challenge #12: Electric sleighs, wow!', () => {
   it('#T should return a string', () => {
     expect(
       typeof selectSleigh(1, [
