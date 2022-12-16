@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { wrapping } from '@/challenge-01'
+import { typeOfValue } from 'utils/typeof'
 
 const TEST_CASES: TestCases<string[], string[]>[] = [
   {
@@ -17,8 +18,7 @@ const TEST_CASES: TestCases<string[], string[]>[] = [
 
 describe('Challenge #1: Automating Christmas gift wrapping!', () => {
   it('#T should return an array', () => {
-    const wrapped = wrapping([])
-    expect(Array.isArray(wrapped) ? 'array' : typeof wrapped).toBe('array')
+    expect(typeOfValue(wrapping([]))).toBe('array')
   })
 
   it.each(TEST_CASES)(

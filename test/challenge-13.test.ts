@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { getFilesToBackup } from '@/challenge-13'
+import { typeOfValue } from 'utils/typeof'
 
 const TEST_CASES: TestCases<[number, [number, number][]], number[]>[] = [
   {
@@ -46,10 +47,7 @@ const TEST_CASES: TestCases<[number, [number, number][]], number[]>[] = [
 
 describe('Challenge #13: Backups for Santa Claus files', () => {
   it('#T should return an array', () => {
-    const backupIds = getFilesToBackup(1556300600, [])
-    return expect(Array.isArray(backupIds) ? 'array' : typeof backupIds).toBe(
-      'array'
-    )
+    return expect(typeOfValue(getFilesToBackup(1556300600, []))).toBe('array')
   })
 
   it.each(TEST_CASES)(
