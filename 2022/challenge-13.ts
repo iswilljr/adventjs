@@ -1,3 +1,4 @@
+// score: 360
 export function getFilesToBackup(
   lastBackup: number,
   changes: [number, number][]

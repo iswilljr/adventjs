@@ -1,3 +1,4 @@
+// score: 300
 export function decorateTree(base: string) {
   const dict = {
     PP: 'P',

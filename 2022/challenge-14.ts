@@ -1,3 +1,4 @@
+// score: 400
 export function getOptimalPath(path: number[][]) {
   return path.reduceRight((previous, current) =>
     current.map(
