@@ -9,20 +9,26 @@
     "preview": "vite preview",
     "prepare": "husky install",
     "format": "prettier -wu .",
+    "format:check": "prettier -cu .",
+    "lint": "eslint --fix .",
+    "lint:check": "eslint .",
     "test": "vitest run"
   },
   "devDependencies": {
-    "@types/node": "18.11.12",
+    "@types/node": "18.11.17",
+    "@typescript-eslint/eslint-plugin": "5.46.1",
+    "@typescript-eslint/parser": "5.46.1",
+    "eslint": "8.30.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-config-standard-with-typescript": "24.0.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-n": "15.6.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-promise": "6.1.1",
     "husky": "8.0.2",
     "prettier": "2.8.1",
-    "typescript": "4.9.3",
-    "vite": "3.2.5",
-    "vitest": "0.25.5"
-  },
-  "prettier": {
-    "printWidth": 80,
-    "singleQuote": true,
-    "semi": false,
-    "arrowParens": "avoid"
+    "typescript": "4.8.4",
+    "vite": "4.0.2",
+    "vitest": "0.25.8"
   }
 }
