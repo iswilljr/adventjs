@@ -1,0 +1,41 @@
+name: Solutions for AdventJs Challenges
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: yarn
+      - name: Install dependencies
+        run: yarn --frozen-lockfile
+      - name: Check lint
+        run: yarn lint:check
+      - name: Check format
+        run: yarn format:check
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: yarn
+      - name: Install dependencies
+        run: yarn --frozen-lockfile
+      - name: Testing
+        run: yarn test
