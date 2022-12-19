@@ -1,5 +1,5 @@
-import { describe, it } from 'vitest'
-import {} from './challenge-03'
+import { describe, expect, it } from 'vitest'
+import { isValid } from './challenge-03'
 
 const TEST_CASES: Array<TestCases<string, boolean>> = [
   { args: 'bici coche (balón) bici coche peluche', expected: true },
@@ -10,11 +10,15 @@ const TEST_CASES: Array<TestCases<string, boolean>> = [
   { args: '() bici', expected: false },
 ]
 
-describe.skip('Challenge #3: El Grinch quiere fastidiar la Navidad', () => {
-  it.todo('#T should return a number', () => {})
+describe('Challenge #3: El Grinch quiere fastidiar la Navidad', () => {
+  it('#T should return a boolean', () => {
+    expect(typeof isValid('() bici')).toBe('boolean')
+  })
 
   it.each(TEST_CASES)(
     '# should return $expected when the input is $args',
-    () => {}
+    ({ args, expected }) => {
+      expect(isValid(args)).toEqual(expected)
+    }
   )
 })
