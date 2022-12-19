@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { getGiftsToRefill } from '@/challenge-07'
 import { typeOfValue } from 'utils/typeof'
 
-const TEST_CASES: TestCases<[string[], string[], string[]], string[]>[] = [
+const TEST_CASES: Array<TestCases<[string[], string[], string[]], string[]>> = [
   {
     args: [
       ['bici', 'coche', 'bici', 'bici'],

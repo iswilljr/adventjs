@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { selectSleigh, Sleight } from '@/challenge-12'
 
-const TEST_CASES: TestCases<[number, Sleight[]], string | null>[] = [
+const TEST_CASES: Array<TestCases<[number, Sleight[]], string | null>> = [
   {
     args: [
       1,

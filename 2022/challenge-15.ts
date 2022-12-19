@@ -22,12 +22,12 @@ export function decorateTree(base: string) {
         return [
           topTree
             .slice(0, -1)
-            .reduce(
+            .reduce<string[]>(
               (acc, letter, i) =>
                 acc.concat(
                   dict[(letter + topTree[i + 1]) as keyof typeof dict]
                 ),
-              [] as string[]
+              []
             )
             .join(' '),
           ...tree,

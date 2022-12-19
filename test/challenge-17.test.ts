@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { carryGifts } from '@/challenge-17'
 import { typeOfValue } from 'utils/typeof'
 
-const TEST_CASES: TestCases<[string[], number], string[]>[] = [
+const TEST_CASES: Array<TestCases<[string[], number], string[]>> = [
   {
     args: [['game', 'bike', 'book', 'toy'], 10],
     expected: ['game bike', 'book toy'],

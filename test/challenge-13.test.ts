@@ -2,7 +2,9 @@ import { describe, expect, it } from 'vitest'
 import { getFilesToBackup } from '@/challenge-13'
 import { typeOfValue } from 'utils/typeof'
 
-const TEST_CASES: TestCases<[number, [number, number][]], number[]>[] = [
+const TEST_CASES: Array<
+  TestCases<[number, Array<[number, number]>], number[]>
+> = [
   {
     args: [
       1546300800,

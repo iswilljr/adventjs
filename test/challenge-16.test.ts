@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { fixLetter } from '@/challenge-16'
 
-const TEST_CASES: TestCases<string, string>[] = [
+const TEST_CASES: Array<TestCases<string, string>> = [
   {
     args: ' hello,  how are you??     do you know if santa claus exists?  i really hope he does!  bye  ',
     expected:

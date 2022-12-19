@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { distributeGifts } from '@/challenge-03'
 
-const TEST_CASES: TestCases<[string[], string[]], number>[] = [
+const TEST_CASES: Array<TestCases<[string[], string[]], number>> = [
   {
     args: [
       ['book', 'doll', 'ball'],

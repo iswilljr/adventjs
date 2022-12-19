@@ -1,7 +1,7 @@
 export function carryGifts(gifts: string[], maxWeight: number) {
   return gifts
     .filter(g => g.length <= maxWeight)
-    .reduce(
+    .reduce<string[]>(
       (b, g) => (
         b.length > 0 &&
         (b.at(-1) as string).replace(/\s/g, '').length + g.length <= maxWeight
@@ -9,6 +9,6 @@ export function carryGifts(gifts: string[], maxWeight: number) {
           : b.push(g),
         b
       ),
-      [] as string[]
+      []
     )
 }

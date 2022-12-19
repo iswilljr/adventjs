@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { decorateTree } from '@/challenge-15'
 import { typeOfValue } from 'utils/typeof'
 
-const TEST_CASES: TestCases<string, string[]>[] = [
+const TEST_CASES: Array<TestCases<string, string[]>> = [
   { args: 'B P R P', expected: ['R', 'P B', 'R B B', 'B P R P'] },
   { args: 'B B', expected: ['B', 'B B'] },
   {
