@@ -19,8 +19,8 @@ getCompleted('03:30:30', '05:50:50') // '3/5
 
 Note:
 
-The time format is `hh:mm:ss`.
-The output format is a string `a/b` where `a` is the portion of the task that has already been completed and `b` is the portion of the task that is left to complete.
-The portion is always shown with the smallest fraction possible. (for example, `2/4` will never be shown because it can be represented as `1/2`).
-If the task has already been completed, the fraction would be `1/1`.
-No elf has been mistreated during the execution of this challenge nor have they had to use Scrum for real.
+- The time format is `hh:mm:ss`.
+- The output format is a string `a/b` where `a` is the portion of the task that has already been completed and `b` is the portion of the task that is left to complete.
+- The portion is always shown with the smallest fraction possible. (for example, `2/4` will never be shown because it can be represented as `1/2`).
+- If the task has already been completed, the fraction would be `1/1`.
+- No elf has been mistreated during the execution of this challenge nor have they had to use Scrum for real.
