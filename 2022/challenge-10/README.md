@@ -33,7 +33,7 @@ It goes up-down-up.
 
 We need the program to return a `boolean` that indicates whether the sleigh makes a parabola or not.
 
-**Things to keep in mind**
+**Things to keep in mind**:
 
 - The jump is valid if it goes up once and down once. If the sleigh stays at the same height between two positions, the parabola continues.
 - It is not necessary for the starting and ending points to be the same (cities can be at different heights).
