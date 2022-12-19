@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { wrapping } from '@/challenge-01'
+import { wrapping } from './challenge-01'
 import { typeOfValue } from 'utils/typeof'
 
 const TEST_CASES: Array<TestCases<string[], string[]>> = [

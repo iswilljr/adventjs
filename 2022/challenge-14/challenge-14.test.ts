@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { getOptimalPath } from '@/challenge-14'
+import { getOptimalPath } from './challenge-14'
 
 const TEST_CASES: Array<TestCases<number[][], number>> = [
   { args: [[0], [7, 4], [2, 4, 6]], expected: 8 },

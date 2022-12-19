@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { checkJump } from '@/challenge-10'
+import { checkJump } from './challenge-10'
 
 const TEST_CASES: Array<TestCases<number[], boolean>> = [
   { args: [1, 3, 8, 5, 2], expected: true },

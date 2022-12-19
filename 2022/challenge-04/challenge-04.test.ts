@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { fitsInOneBox, Box } from '@/challenge-04'
+import { fitsInOneBox, Box } from './challenge-04'
 
 const TEST_CASES: Array<TestCases<Box[], boolean>> = [
   {

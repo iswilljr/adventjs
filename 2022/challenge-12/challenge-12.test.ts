@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { selectSleigh, Sleight } from '@/challenge-12'
+import { selectSleigh, Sleight } from './challenge-12'
 
 const TEST_CASES: Array<TestCases<[number, Sleight[]], string | null>> = [
   {

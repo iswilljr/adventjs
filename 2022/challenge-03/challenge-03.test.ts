@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { distributeGifts } from '@/challenge-03'
+import { distributeGifts } from './challenge-03'
 
 const TEST_CASES: Array<TestCases<[string[], string[]], number>> = [
   {

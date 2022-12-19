@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { checkPart } from '@/challenge-08'
+import { checkPart } from './challenge-08'
 
 const TEST_CASES: Array<TestCases<string, boolean>> = [
   { args: 'uwu', expected: true },

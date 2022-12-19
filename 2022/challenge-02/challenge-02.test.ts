@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { countHours } from '@/challenge-02'
+import { countHours } from './challenge-02'
 
 const TEST_CASES: Array<TestCases<[number, string[]], number>> = [
   { args: [2023, ['01/06', '04/01', '12/25']], expected: 4 },

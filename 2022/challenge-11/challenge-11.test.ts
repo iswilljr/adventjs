@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { getCompleted } from '@/challenge-11'
+import { getCompleted } from './challenge-11'
 
 const TEST_CASES: Array<TestCases<[string, string], string>> = [
   { args: ['01:00:00', '03:00:00'], expected: '1/3' },

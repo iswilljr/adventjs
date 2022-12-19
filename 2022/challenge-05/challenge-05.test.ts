@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { getMaxGifts } from '@/challenge-05'
+import { getMaxGifts } from './challenge-05'
 
 const TEST_CASES: Array<TestCases<[number[], number, number], number>> = [
   { args: [[12, 3, 11, 5, 7], 20, 3], expected: 20 },

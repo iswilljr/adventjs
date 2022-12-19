@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { fixLetter } from '@/challenge-16'
+import { fixLetter } from './challenge-16'
 
 const TEST_CASES: Array<TestCases<string, string>> = [
   {
