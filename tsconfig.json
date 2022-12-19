@@ -13,9 +13,6 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "skipLibCheck": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./2022/*"]
-    }
+    "baseUrl": "."
   }
 }
