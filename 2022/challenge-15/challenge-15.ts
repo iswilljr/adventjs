@@ -18,20 +18,12 @@ export function decorateTree(base: string) {
     .reduce(
       tree => {
         const topTree = tree[0].split(' ')
+        const top = topTree.slice(0, -1).reduce<string[]>((acc, letter, i) => {
+          const key = (letter + topTree[i + 1]) as keyof typeof dict
+          return acc.concat(dict[key])
+        }, [])
 
-        return [
-          topTree
-            .slice(0, -1)
-            .reduce<string[]>(
-              (acc, letter, i) =>
-                acc.concat(
-                  dict[(letter + topTree[i + 1]) as keyof typeof dict]
-                ),
-              []
-            )
-            .join(' '),
-          ...tree,
-        ]
+        return [top.join(' '), ...tree]
       },
       [base]
     )
