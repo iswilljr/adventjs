@@ -71,6 +71,7 @@ This repository contains the solutions to the challenges proposed by [@midudev](
 | 17  |          Carrying gifts in bags          |       🟠       | [Show](https://adventjs.dev/challenges/2022/17) |
 | 18  |            We ran out of ink!            |       🟢       | [Show](https://adventjs.dev/challenges/2022/18) |
 | 19  |            Sorting the toys!             |       🟢       | [Show](https://adventjs.dev/challenges/2022/19) |
+| 20  |          More challenging trips          |       🔴       | [Show](https://adventjs.dev/challenges/2022/20) |
 
 </details>
 
