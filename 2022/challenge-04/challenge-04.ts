@@ -1,8 +1,11 @@
 // score: 170
 export function fitsInOneBox(boxes: Box[]) {
   return boxes
-    .sort(({ l }, b) => l - b.l)
-    .every(({ w, h }, i, { [i - 1]: c }) => i < 1 || (h > c.h && w > c.w))
+    .sort((a, b) => a.l - b.l)
+    .every((box, i) => {
+      const next = boxes[i - 1]
+      return i < 1 || (box.h > next.h && box.w > next.w)
+    })
 }
 
 export interface Box {
