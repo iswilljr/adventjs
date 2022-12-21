@@ -12,7 +12,8 @@
     "format:check": "prettier -cu .",
     "lint": "eslint --fix .",
     "lint:check": "eslint .",
-    "test": "vitest run"
+    "test": "vitest run",
+    "test:watch": "vitest --watch"
   },
   "devDependencies": {
     "@types/node": "18.11.17",
