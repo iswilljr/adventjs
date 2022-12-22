@@ -1,19 +1,12 @@
 export function checkStepNumbers(systemNames: string[], stepNumbers: number[]) {
-  const bag = systemNames.reduce<Record<string, number[]>>(
-    (bag, systemName, i) => {
-      const stepNumber = stepNumbers[i]
-      const prevBag = bag[systemName] || []
+  const bag: Record<string, number> = {}
 
-      bag[systemName] = [...prevBag, stepNumber]
+  return systemNames.every((systemName, i) => {
+    const number = stepNumbers[i]
+    const prevNumber = bag[systemName] || number
+    const valid = prevNumber <= number
+    bag[systemName] = number
 
-      return bag
-    },
-    {}
-  )
-
-  const bagValues = Object.values(bag)
-
-  return bagValues.every(bag =>
-    bag.slice(1).every((number, i) => number > bag[i])
-  )
+    return valid
+  })
 }
