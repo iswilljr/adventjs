@@ -72,6 +72,8 @@ This repository contains the solutions to the challenges proposed by [@midudev](
 | 18  |            We ran out of ink!            |       🟢       | [Show](https://adventjs.dev/challenges/2022/18) |
 | 19  |            Sorting the toys!             |       🟢       | [Show](https://adventjs.dev/challenges/2022/19) |
 | 20  |          More challenging trips          |       🔴       | [Show](https://adventjs.dev/challenges/2022/20) |
+| 21  |         Creating the gifts table         |       🟠       | [Show](https://adventjs.dev/challenges/2022/21) |
+| 22  |            The lights in sync            |       🟢       | [Show](https://adventjs.dev/challenges/2022/22) |
 
 </details>
 
