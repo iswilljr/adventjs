@@ -74,6 +74,7 @@ This repository contains the solutions to the challenges proposed by [@midudev](
 | 20  |          More challenging trips          |       🔴       | [Show](https://adventjs.dev/challenges/2022/20) |
 | 21  |         Creating the gifts table         |       🟠       | [Show](https://adventjs.dev/challenges/2022/21) |
 | 22  |            The lights in sync            |       🟢       | [Show](https://adventjs.dev/challenges/2022/22) |
+| 22  |           Santa Claus Compiler           |       🔴       | [Show](https://adventjs.dev/challenges/2022/23) |
 
 </details>
 
