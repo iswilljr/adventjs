@@ -7,35 +7,35 @@ on:
 
 jobs:
   lint:
-    name: Lint
+    name: Check
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
         with:
-          fetch-depth: 0
+          version: 7
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
-          cache: yarn
+          node-version: 18
+          cache: pnpm
       - name: Install dependencies
-        run: yarn --frozen-lockfile
-      - name: Check lint
-        run: yarn lint:check
-      - name: Check format
-        run: yarn format:check
+        run: pnpm install
+      - name: Type, Lint and Format check
+        run: pnpm run check
 
   test:
     name: Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
         with:
-          fetch-depth: 0
+          version: 7
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
-          cache: yarn
+          node-version: 18
+          cache: pnpm
       - name: Install dependencies
-        run: yarn --frozen-lockfile
-      - name: Testing
-        run: yarn test
+        run: pnpm install
+      - name: Testing Challenge Solutions
+        run: pnpm run test
