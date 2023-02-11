@@ -1,7 +1,7 @@
-import { describe, expect, it } from 'vitest'
+import { describe } from 'vitest'
 import { pangram } from './challenge-20'
 
-const TEST_CASES: Array<TestCases<string, boolean>> = [
+const TEST_CASES: TestCases<string, boolean> = [
   {
     args: 'Extraño pan de col y kiwi se quemó bajo fugaz vaho',
     expected: true,
@@ -18,14 +18,8 @@ const TEST_CASES: Array<TestCases<string, boolean>> = [
 ]
 
 describe('Challenge #20: ¿Una carta de pangramas? ¡QUÉ!', () => {
-  it('#T should return a boolean', () => {
-    expect(typeof pangram(TEST_CASES[0].args)).toBe('boolean')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    fn: pangram,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(pangram(args)).toEqual(expected)
-    }
-  )
 })

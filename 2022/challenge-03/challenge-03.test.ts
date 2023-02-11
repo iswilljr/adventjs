@@ -1,7 +1,7 @@
-import { describe, expect, it } from 'vitest'
+import { describe } from 'vitest'
 import { distributeGifts } from './challenge-03'
 
-const TEST_CASES: Array<TestCases<[string[], string[]], number>> = [
+const TEST_CASES: TestCases<[string[], string[]], number> = [
   {
     args: [
       ['book', 'doll', 'ball'],
@@ -55,16 +55,8 @@ const TEST_CASES: Array<TestCases<[string[], string[]], number>> = [
 ]
 
 describe('Challenge #3: How many packs of gifts can Santa carry?', () => {
-  it('#T should return a number', () => {
-    expect(
-      typeof distributeGifts(['book', 'doll', 'ball'], ['dasher', 'dancer'])
-    ).toBe('number')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    spreadFn: distributeGifts,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(distributeGifts(...args)).toEqual(expected)
-    }
-  )
 })

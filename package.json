@@ -4,18 +4,18 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
     "prepare": "husky install",
     "format": "prettier -wu .",
     "format:check": "prettier -cu .",
     "lint": "eslint --fix .",
     "lint:check": "eslint .",
     "test": "vitest run",
-    "test:watch": "vitest --watch"
+    "test:watch": "vitest --watch",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run format:check && npm run lint:check && npm run typecheck"
   },
   "devDependencies": {
+    "@types/kind-of": "6.0.0",
     "@types/node": "18.11.17",
     "@typescript-eslint/eslint-plugin": "5.46.1",
     "@typescript-eslint/parser": "5.46.1",
@@ -27,6 +27,7 @@
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-promise": "6.1.1",
     "husky": "8.0.2",
+    "kind-of": "6.0.3",
     "lint-staged": "13.1.0",
     "prettier": "2.8.1",
     "typescript": "4.8.4",

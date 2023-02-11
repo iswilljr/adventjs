@@ -1,5 +1,5 @@
-import { describe, expect, it } from 'vitest'
-import { canMouseEat, Direction } from './challenge-25'
+import { describe } from 'vitest'
+import { canMouseEat, type Direction } from './challenge-25'
 
 const room = [
   [' ', ' ', ' '],
@@ -14,7 +14,7 @@ const room2 = [
   [' ', ' ', ' ', '*'],
 ]
 
-const TEST_CASES: Array<TestCases<[Direction, string[][]], boolean>> = [
+const TEST_CASES: TestCases<[Direction, string[][]], boolean> = [
   { args: ['up', room], expected: false },
   { args: ['down', room], expected: true },
   { args: ['right', room], expected: false },
@@ -26,14 +26,8 @@ const TEST_CASES: Array<TestCases<[Direction, string[][]], boolean>> = [
 ]
 
 describe('Challenge #25: El último juego y hasta el año que viene 👋', () => {
-  it('#T should return a boolean', () => {
-    expect(typeof canMouseEat(...TEST_CASES[0].args)).toBe('boolean')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    spreadFn: canMouseEat,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(canMouseEat(...args)).toEqual(expected)
-    }
-  )
 })

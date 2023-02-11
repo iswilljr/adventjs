@@ -1,8 +1,12 @@
-import { typeOfValue } from 'utils/typeof'
-import { describe, expect, it } from 'vitest'
-import { howManyReindeers, Reindeer, Gift, Result } from './challenge-20'
+import { describe } from 'vitest'
+import {
+  howManyReindeers,
+  type Reindeer,
+  type Gift,
+  type Result,
+} from './challenge-20'
 
-const TEST_CASES: Array<TestCases<[Reindeer[], Gift[]], Result[]>> = [
+const TEST_CASES: TestCases<[Reindeer[], Gift[]], Result[]> = [
   {
     args: [
       [
@@ -144,14 +148,8 @@ const TEST_CASES: Array<TestCases<[Reindeer[], Gift[]], Result[]>> = [
 ]
 
 describe('Challenge #20: More challenging trips', () => {
-  it('#T should return an array', () => {
-    expect(typeOfValue(howManyReindeers(...TEST_CASES[0].args))).toBe('array')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    spreadFn: howManyReindeers,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(howManyReindeers(...args)).toEqual(expected)
-    }
-  )
 })

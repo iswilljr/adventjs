@@ -1,7 +1,7 @@
-import { describe, expect, it } from 'vitest'
+import { describe } from 'vitest'
 import { createXmasTree } from './challenge-04'
 
-const TEST_CASES: Array<TestCases<number, string>> = [
+const TEST_CASES: TestCases<number, string> = [
   {
     args: 5,
     expected: `
@@ -25,14 +25,8 @@ __#__`.trimStart(),
 ]
 
 describe('Challenge #4: ¡Es hora de poner la navidad en casa!', () => {
-  it('#T should return a string', () => {
-    expect(typeof createXmasTree(3)).toBe('string')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    fn: createXmasTree,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(createXmasTree(args)).toEqual(expected)
-    }
-  )
 })

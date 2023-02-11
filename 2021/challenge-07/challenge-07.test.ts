@@ -1,8 +1,7 @@
-import { typeOfValue } from 'utils/typeof'
-import { describe, expect, it } from 'vitest'
+import { describe } from 'vitest'
 import { contains } from './challenge-07'
 
-const TEST_CASES: Array<TestCases<[Record<string, any>, string], boolean>> = [
+const TEST_CASES: TestCases<[Record<string, any>, string], boolean> = [
   {
     args: [
       {
@@ -43,14 +42,8 @@ const TEST_CASES: Array<TestCases<[Record<string, any>, string], boolean>> = [
 ]
 
 describe('Challenge #7: Buscando en el almacén...', () => {
-  it('#T should return a boolean', () => {
-    expect(typeOfValue(contains(...TEST_CASES[0].args))).toBe('boolean')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    spreadFn: contains,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(contains(...args)).toEqual(expected)
-    }
-  )
 })

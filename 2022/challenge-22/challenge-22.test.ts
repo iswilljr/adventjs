@@ -1,7 +1,7 @@
-import { describe, expect, it } from 'vitest'
+import { describe } from 'vitest'
 import { checkStepNumbers } from './challenge-22'
 
-const TEST_CASES: Array<TestCases<[string[], number[]], boolean>> = [
+const TEST_CASES: TestCases<[string[], number[]], boolean> = [
   {
     args: [
       ['tree_1', 'tree_2', 'house', 'tree_1', 'tree_2', 'house'],
@@ -42,14 +42,8 @@ const TEST_CASES: Array<TestCases<[string[], number[]], boolean>> = [
 ]
 
 describe('Challenge #22: The lights in sync', () => {
-  it('#T should return a boolean', () => {
-    expect(typeof checkStepNumbers(...TEST_CASES[0].args)).toBe('boolean')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    spreadFn: checkStepNumbers,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(checkStepNumbers(...args)).toEqual(expected)
-    }
-  )
 })

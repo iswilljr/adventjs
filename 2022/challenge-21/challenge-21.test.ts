@@ -1,7 +1,7 @@
-import { describe, expect, it } from 'vitest'
-import { printTable, Gift } from './challenge-21'
+import { describe } from 'vitest'
+import { printTable, type Gift } from './challenge-21'
 
-const TEST_CASES: Array<TestCases<Gift[], string>> = [
+const TEST_CASES: TestCases<Gift[], string> = [
   {
     args: [
       { name: 'PlayStation 5', quantity: 9234782374892 },
@@ -40,14 +40,8 @@ const TEST_CASES: Array<TestCases<Gift[], string>> = [
 ]
 
 describe('Challenge #21: Creating the gifts table', () => {
-  it('#T should return a string', () => {
-    expect(typeof printTable(TEST_CASES[0].args)).toBe('string')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    fn: printTable,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(printTable(args)).toEqual(expected)
-    }
-  )
 })

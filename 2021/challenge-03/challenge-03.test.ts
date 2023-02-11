@@ -1,7 +1,7 @@
-import { describe, expect, it } from 'vitest'
+import { describe } from 'vitest'
 import { isValid } from './challenge-03'
 
-const TEST_CASES: Array<TestCases<string, boolean>> = [
+const TEST_CASES: TestCases<string, boolean> = [
   { args: 'bici coche (balón) bici coche peluche', expected: true },
   { args: '(muñeca) consola bici', expected: true },
   { args: 'bici coche (balón bici coche', expected: false },
@@ -11,14 +11,8 @@ const TEST_CASES: Array<TestCases<string, boolean>> = [
 ]
 
 describe('Challenge #3: El Grinch quiere fastidiar la Navidad', () => {
-  it('#T should return a boolean', () => {
-    expect(typeof isValid('() bici')).toBe('boolean')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    fn: isValid,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(isValid(args)).toEqual(expected)
-    }
-  )
 })

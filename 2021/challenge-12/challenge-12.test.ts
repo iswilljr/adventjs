@@ -1,7 +1,7 @@
-import { describe, expect, it } from 'vitest'
+import { describe } from 'vitest'
 import { getMinJump } from './challenge-12'
 
-const TEST_CASES: Array<TestCases<number[], number>> = [
+const TEST_CASES: TestCases<number[], number> = [
   { args: [5, 3, 6, 7, 9], expected: 4 },
   { args: [2, 4, 6, 8, 10], expected: 7 },
   { args: [1, 2, 3, 5], expected: 4 },
@@ -10,14 +10,8 @@ const TEST_CASES: Array<TestCases<number[], number>> = [
 ]
 
 describe('Challenge #12: La ruta perfecta para dejar los regalos', () => {
-  it('#T should return a number', () => {
-    expect(typeof getMinJump([9, 5, 1])).toBe('number')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    fn: getMinJump,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(getMinJump(args)).toEqual(expected)
-    }
-  )
 })

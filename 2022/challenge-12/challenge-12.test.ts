@@ -1,7 +1,7 @@
-import { describe, expect, it } from 'vitest'
-import { selectSleigh, Sleight } from './challenge-12'
+import { describe } from 'vitest'
+import { selectSleigh, type Sleight } from './challenge-12'
 
-const TEST_CASES: Array<TestCases<[number, Sleight[]], string | null>> = [
+const TEST_CASES: TestCases<[number, Sleight[]], string | null> = [
   {
     args: [
       1,
@@ -47,19 +47,8 @@ const TEST_CASES: Array<TestCases<[number, Sleight[]], string | null>> = [
 ]
 
 describe('Challenge #12: Electric sleighs, wow!', () => {
-  it('#T should return a string', () => {
-    expect(
-      typeof selectSleigh(1, [
-        { name: 'pheralb', consumption: 0.3 },
-        { name: 'TMChein', consumption: 0.5 },
-      ])
-    ).toBe('string')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    spreadFn: selectSleigh,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(selectSleigh(...args)).toEqual(expected)
-    }
-  )
 })

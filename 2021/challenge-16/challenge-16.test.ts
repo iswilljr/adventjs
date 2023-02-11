@@ -1,7 +1,7 @@
-import { describe, expect, it } from 'vitest'
+import { describe } from 'vitest'
 import { decodeNumber } from './challenge-16'
 
-const TEST_CASES: Array<TestCases<string, number>> = [
+const TEST_CASES: TestCases<string, number> = [
   { args: '...', expected: 3 },
   { args: '.,', expected: 4 },
   { args: ',.', expected: 6 },
@@ -17,14 +17,8 @@ const TEST_CASES: Array<TestCases<string, number>> = [
 ]
 
 describe('Challenge #16: Descifrando los números...', () => {
-  it('#T should return a number', () => {
-    expect(typeof decodeNumber(';.W')).toBe('number')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    fn: decodeNumber,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(decodeNumber(args)).toEqual(expected)
-    }
-  )
 })

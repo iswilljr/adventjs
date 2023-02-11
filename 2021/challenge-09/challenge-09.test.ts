@@ -1,12 +1,9 @@
-import { typeOfValue } from 'utils/typeof'
-import { describe, expect, it } from 'vitest'
+import { describe } from 'vitest'
 import { groupBy } from './challenge-09'
 
-const TEST_CASES: Array<
-  TestCases<
-    [any[], string | ((value: any) => string | number)],
-    Record<string, any>
-  >
+const TEST_CASES: TestCases<
+  [any[], string | ((value: any) => string | number)],
+  Record<string, any>
 > = [
   {
     args: [[6.1, 4.2, 6.3], Math.floor],
@@ -45,14 +42,8 @@ const TEST_CASES: Array<
 ]
 
 describe('Challenge #9: Agrupando cosas automáticamente', () => {
-  it('#T should return an object', () => {
-    expect(typeOfValue(groupBy(...TEST_CASES[0].args))).toBe('object')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    spreadFn: groupBy,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(groupBy(...args)).toEqual(expected)
-    }
-  )
 })

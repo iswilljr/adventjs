@@ -1,8 +1,9 @@
-import { describe, expect, it } from 'vitest'
+import { describe } from 'vitest'
 import { countPackages } from './challenge-17'
 
-const TEST_CASES: Array<
-  TestCases<[Array<[string, number, string[]]>, string], number>
+const TEST_CASES: TestCases<
+  [Array<[string, number, string[]]>, string],
+  number
 > = [
   {
     args: [
@@ -33,14 +34,8 @@ const TEST_CASES: Array<
 ]
 
 describe('Challenge #17: La locura de enviar paquetes en esta época', () => {
-  it('#T should return a number', () => {
-    expect(typeof countPackages(...TEST_CASES[0].args)).toBe('number')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    spreadFn: countPackages,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(countPackages(...args)).toEqual(expected)
-    }
-  )
 })

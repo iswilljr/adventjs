@@ -1,7 +1,7 @@
-import { describe, expect, it } from 'vitest'
+import { describe } from 'vitest'
 import { countHours } from './challenge-02'
 
-const TEST_CASES: Array<TestCases<[number, string[]], number>> = [
+const TEST_CASES: TestCases<[number, string[]], number> = [
   { args: [2023, ['01/06', '04/01', '12/25']], expected: 4 },
   { args: [2022, ['01/06', '04/01', '12/25']], expected: 4 },
   {
@@ -15,14 +15,8 @@ const TEST_CASES: Array<TestCases<[number, string[]], number>> = [
 ]
 
 describe('Challenge #2: Nobody wants to do extra hours at work', () => {
-  it('#T should return a number', () => {
-    expect(typeof countHours(2003, ['11/01'])).toBe('number')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    spreadFn: countHours,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(countHours(...args)).toEqual(expected)
-    }
-  )
 })

@@ -1,8 +1,7 @@
-import { describe, expect, it } from 'vitest'
+import { describe } from 'vitest'
 import { decorateTree } from './challenge-15'
-import { typeOfValue } from 'utils/typeof'
 
-const TEST_CASES: Array<TestCases<string, string[]>> = [
+const TEST_CASES: TestCases<string, string[]> = [
   { args: 'B P R P', expected: ['R', 'P B', 'R B B', 'B P R P'] },
   { args: 'B B', expected: ['B', 'B B'] },
   {
@@ -24,14 +23,8 @@ const TEST_CASES: Array<TestCases<string, string[]>> = [
 ]
 
 describe('Challenge #15: Decorating the Christmas tree', () => {
-  it('#T should return an array', () => {
-    expect(typeOfValue(decorateTree('B P R P'))).toBe('array')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    fn: decorateTree,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(decorateTree(args)).toEqual(expected)
-    }
-  )
 })

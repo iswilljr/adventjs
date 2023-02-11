@@ -1,7 +1,7 @@
-import { describe, expect, it } from 'vitest'
+import { describe } from 'vitest'
 import { getCompleted } from './challenge-11'
 
-const TEST_CASES: Array<TestCases<[string, string], string>> = [
+const TEST_CASES: TestCases<[string, string], string> = [
   { args: ['01:00:00', '03:00:00'], expected: '1/3' },
   { args: ['02:00:00', '04:00:00'], expected: '1/2' },
   { args: ['01:00:00', '01:00:00'], expected: '1/1' },
@@ -12,14 +12,8 @@ const TEST_CASES: Array<TestCases<[string, string], string>> = [
 ]
 
 describe('Challenge #11: Santa Claus is Scrum Master', () => {
-  it('#T should return a string', () => {
-    expect(typeof getCompleted('01:00:00', '03:00:00')).toBe('string')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    spreadFn: getCompleted,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(getCompleted(...args)).toEqual(expected)
-    }
-  )
 })

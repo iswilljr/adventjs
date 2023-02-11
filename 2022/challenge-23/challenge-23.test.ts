@@ -1,8 +1,7 @@
-import { typeOfValue } from 'utils/typeof'
-import { describe, expect, it } from 'vitest'
+import { describe } from 'vitest'
 import { executeCommands } from './challenge-23'
 
-const TEST_CASES: Array<TestCases<string[], number[]>> = [
+const TEST_CASES: TestCases<string[], number[]> = [
   {
     args: ['MOV 5,V00', 'MOV 10,V01', 'DEC V00', 'ADD V00,V01'],
     expected: [14, 10, 0, 0, 0, 0, 0, 0],
@@ -28,14 +27,8 @@ const TEST_CASES: Array<TestCases<string[], number[]>> = [
 ]
 
 describe('Challenge #23: Santa Claus Compiler', () => {
-  it('#T should return an array', () => {
-    expect(typeOfValue(executeCommands(TEST_CASES[0].args))).toBe('array')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    fn: executeCommands,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(executeCommands(args)).toEqual(expected)
-    }
-  )
 })

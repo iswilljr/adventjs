@@ -1,7 +1,7 @@
-import { describe, expect, it } from 'vitest'
+import { describe } from 'vitest'
 import { canCarry } from './challenge-21'
 
-const TEST_CASES: Array<TestCases<[number, number[][]], boolean>> = [
+const TEST_CASES: TestCases<[number, number[][]], boolean> = [
   {
     args: [
       4,
@@ -56,14 +56,8 @@ const TEST_CASES: Array<TestCases<[number, number[][]], boolean>> = [
 ]
 
 describe('Challenge #21: La ruta con los regalos', () => {
-  it('#T should return a boolean', () => {
-    expect(typeof canCarry(...TEST_CASES[0].args)).toBe('boolean')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    spreadFn: canCarry,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(canCarry(...args)).toEqual(expected)
-    }
-  )
 })

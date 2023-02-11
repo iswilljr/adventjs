@@ -1,7 +1,7 @@
-import { describe, expect, it } from 'vitest'
-import { fitsInOneBox, Box } from './challenge-04'
+import { describe } from 'vitest'
+import { fitsInOneBox, type Box } from './challenge-04'
 
-const TEST_CASES: Array<TestCases<Box[], boolean>> = [
+const TEST_CASES: TestCases<Box[], boolean> = [
   {
     args: [
       { l: 1, w: 1, h: 10 },
@@ -44,19 +44,8 @@ const TEST_CASES: Array<TestCases<Box[], boolean>> = [
 ]
 
 describe('Challenge #4: Box inside a box and another...', () => {
-  it('#T should return a boolean', () => {
-    expect(
-      typeof fitsInOneBox([
-        { l: 1, w: 1, h: 1 },
-        { l: 2, w: 2, h: 2 },
-      ])
-    ).toBe('boolean')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    fn: fitsInOneBox,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(fitsInOneBox(args)).toEqual(expected)
-    }
-  )
 })

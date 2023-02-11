@@ -1,8 +1,7 @@
-import { describe, expect, it } from 'vitest'
+import { describe } from 'vitest'
 import { dryNumber } from './challenge-18'
-import { typeOfValue } from 'utils/typeof'
 
-const TEST_CASES: Array<TestCases<[number, number], number[]>> = [
+const TEST_CASES: TestCases<[number, number], number[]> = [
   { args: [1, 15], expected: [1, 10, 11, 12, 13, 14, 15] },
   { args: [2, 20], expected: [2, 12, 20] },
   { args: [3, 33], expected: [3, 13, 23, 30, 31, 32, 33] },
@@ -12,14 +11,8 @@ const TEST_CASES: Array<TestCases<[number, number], number[]>> = [
 ]
 
 describe('Challenge #18: We ran out of ink!', () => {
-  it('#T should return an array', () => {
-    expect(typeOfValue(dryNumber(0, 10))).toBe('array')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    spreadFn: dryNumber,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(dryNumber(...args)).toEqual(expected)
-    }
-  )
 })

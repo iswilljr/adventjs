@@ -1,10 +1,7 @@
-import { describe, expect, it } from 'vitest'
+import { describe } from 'vitest'
 import { getFilesToBackup } from './challenge-13'
-import { typeOfValue } from 'utils/typeof'
 
-const TEST_CASES: Array<
-  TestCases<[number, Array<[number, number]>], number[]>
-> = [
+const TEST_CASES: TestCases<[number, Array<[number, number]>], number[]> = [
   {
     args: [
       1546300800,
@@ -48,14 +45,8 @@ const TEST_CASES: Array<
 ]
 
 describe('Challenge #13: Backups for Santa Claus files', () => {
-  it('#T should return an array', () => {
-    return expect(typeOfValue(getFilesToBackup(1556300600, []))).toBe('array')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    spreadFn: getFilesToBackup,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(getFilesToBackup(...args)).toEqual(expected)
-    }
-  )
 })

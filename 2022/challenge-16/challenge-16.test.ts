@@ -1,7 +1,7 @@
-import { describe, expect, it } from 'vitest'
+import { describe } from 'vitest'
 import { fixLetter } from './challenge-16'
 
-const TEST_CASES: Array<TestCases<string, string>> = [
+const TEST_CASES: TestCases<string, string> = [
   {
     args: ' hello,  how are you??     do you know if santa claus exists?  i really hope he does!  bye  ',
     expected:
@@ -28,14 +28,8 @@ const TEST_CASES: Array<TestCases<string, string>> = [
 ]
 
 describe("Challenge #16: Fixing Santa Claus' letters", () => {
-  it('#T should return a string', () => {
-    expect(typeof fixLetter('  hi    santa    claus ')).toBe('string')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    fn: fixLetter,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(fixLetter(args)).toEqual(expected)
-    }
-  )
 })

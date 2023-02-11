@@ -1,7 +1,7 @@
-import { describe, expect, it } from 'vitest'
-import { countDecorations, Tree } from './challenge-22'
+import { describe } from 'vitest'
+import { countDecorations, type Tree } from './challenge-22'
 
-const TEST_CASES: Array<TestCases<Tree, number>> = [
+const TEST_CASES: TestCases<Tree, number> = [
   {
     args: {
       value: 1,
@@ -33,14 +33,8 @@ const TEST_CASES: Array<TestCases<Tree, number>> = [
 ]
 
 describe('Challenge #22: ¿Cuántos adornos necesita el árbol?', () => {
-  it('#T should return a number', () => {
-    expect(typeof countDecorations(TEST_CASES[0].args)).toBe('number')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    fn: countDecorations,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(countDecorations(args)).toEqual(expected)
-    }
-  )
 })

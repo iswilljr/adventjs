@@ -1,8 +1,7 @@
-import { typeOfValue } from 'utils/typeof'
-import { describe, expect, it } from 'vitest'
+import { describe } from 'vitest'
 import { learn } from './challenge-19'
 
-const TEST_CASES: Array<TestCases<[number, number[]], number[] | null>> = [
+const TEST_CASES: TestCases<[number, number[]], number[] | null> = [
   { args: [10, [2, 3, 8, 1, 4]], expected: [0, 2] },
   { args: [15, [2, 10, 4, 1]], expected: [1, 2] },
   { args: [25, [10, 15, 20, 5]], expected: [0, 1] },
@@ -13,14 +12,8 @@ const TEST_CASES: Array<TestCases<[number, number[]], number[] | null>> = [
 ]
 
 describe('Challenge #19: ¿Qué deberíamos aprender en Platzi?', () => {
-  it('#T should return an array', () => {
-    expect(typeOfValue(learn(...TEST_CASES[0].args))).toBe('array')
+  buildChallengeTestCases({
+    cases: TEST_CASES,
+    spreadFn: learn,
   })
-
-  it.each(TEST_CASES)(
-    '# should return $expected when the input is $args',
-    ({ args, expected }) => {
-      expect(learn(...args)).toEqual(expected)
-    }
-  )
 })
