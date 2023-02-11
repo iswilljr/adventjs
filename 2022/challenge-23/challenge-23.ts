@@ -18,7 +18,10 @@ export function executeCommands(commands: string[]) {
   for (let i = 0; i < commands.length; i++) {
     const command = commands[i]
     const [commandName, args] = command.split(' ')
-    const values = args.split(',').map(v => +v.replace(/V/g, ''))
+    const values = args.split(',').map(v => +v.replace(/V/g, '')) as [
+      number,
+      number
+    ]
 
     if (commandName === 'JMP' && registers[0] !== 0) i = values[0] - 1
     if (commandName !== 'JMP') actions[commandName](...values, command)

@@ -17,4 +17,4 @@ export function checkIsSameTree(treeA: Tree, treeB: Tree) {
   return total === total2
 }
 
-export { Tree }
+export type { Tree }
