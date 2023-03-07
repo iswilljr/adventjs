@@ -16,11 +16,11 @@
   },
   "devDependencies": {
     "@types/kind-of": "6.0.0",
-    "@types/node": "18.13.0",
-    "@typescript-eslint/eslint-plugin": "5.51.0",
-    "@typescript-eslint/parser": "5.51.0",
-    "eslint": "8.34.0",
-    "eslint-config-prettier": "8.6.0",
+    "@types/node": "18.14.6",
+    "@typescript-eslint/eslint-plugin": "5.54.1",
+    "@typescript-eslint/parser": "5.54.1",
+    "eslint": "8.35.0",
+    "eslint-config-prettier": "8.7.0",
     "eslint-config-standard-with-typescript": "34.0.0",
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-n": "15.6.1",
@@ -28,9 +28,9 @@
     "eslint-plugin-promise": "6.1.1",
     "husky": "8.0.3",
     "kind-of": "6.0.3",
-    "lint-staged": "13.1.1",
+    "lint-staged": "13.1.2",
     "prettier": "2.8.4",
     "typescript": "4.9.5",
-    "vitest": "0.28.4"
+    "vitest": "0.29.2"
   }
 }
