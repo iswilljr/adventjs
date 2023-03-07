@@ -1,4 +1,4 @@
 module.exports = {
-  '*.{js,ts}': 'npm run eslint --fix',
-  '*.{json,js,ts,md}': 'npm run prettier -w',
+  '*.{js,ts}': 'npx eslint --fix',
+  '*.{json,js,ts,md}': 'npx prettier -w',
 }
