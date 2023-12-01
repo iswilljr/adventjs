@@ -87,8 +87,9 @@ This repository contains the solutions to the challenges proposed by [@midudev](
 
 ### 🕹️ Challenges
 
-|  #  | Challenge | Difficulty[^1] | Description | Solution |
-| :-: | :-------: | :------------: | :---------: | :------: |
+|  #  |      Challenge       | Difficulty[^1] |                  Description                   |                 Solution                  |
+| :-: | :------------------: | :------------: | :--------------------------------------------: | :---------------------------------------: |
+| 01  | First gift repeated! |       🟢       | [Show](https://adventjs.dev/challenges/2023/1) | [Go](./2023/challenge-01/challenge-01.ts) |
 
 </details>
 
