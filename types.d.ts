@@ -13,7 +13,7 @@ declare global {
   type TestCases<Args, Expected> = Array<TestCase<Args, Expected>>
 
   function buildChallengeTestCases<Args, Expected>(
-    options: BuildChallengeTestOptions<Args, Expected>
+    options: BuildChallengeTestOptions<Args, Expected>,
   ): void
 }
 

@@ -20,7 +20,7 @@ export function executeCommands(commands: string[]) {
     const [commandName, args] = command.split(' ')
     const values = args.split(',').map(v => +v.replace(/V/g, '')) as [
       number,
-      number
+      number,
     ]
 
     if (commandName === 'JMP' && registers[0] !== 0) i = values[0] - 1

@@ -11,7 +11,8 @@ export function getCompleted(part: string, total: string) {
 
   while (b) {
     const aux = b
-    ;(b = gcd % b), (gcd = aux)
+    b = gcd % b
+    gcd = aux
   }
 
   return `${partSeconds / gcd}/${totalSeconds / gcd}`

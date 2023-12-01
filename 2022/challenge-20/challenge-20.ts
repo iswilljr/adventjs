@@ -1,6 +1,6 @@
 export function howManyReindeers(
   reindeerTypes: Reindeer[],
-  gifts: Gift[]
+  gifts: Gift[],
 ): Result[] {
   reindeerTypes.sort((a, b) => b.weightCapacity - a.weightCapacity)
 
@@ -8,7 +8,7 @@ export function howManyReindeers(
     const remainingRnds = reindeerTypes.filter(x => x.weightCapacity < weight)
     let total = remainingRnds.reduce(
       (acc, curr) => (acc += curr.weightCapacity),
-      0
+      0,
     )
 
     const reindeers = remainingRnds.map(({ type, weightCapacity }) => {

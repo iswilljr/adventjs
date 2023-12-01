@@ -3,7 +3,7 @@ export function countPackages(carriers: Carrier[], carrierID: string): number {
 
   return carrier[2].reduce(
     (acc, carrier) => (acc += countPackages(carriers, carrier)),
-    carrier[1]
+    carrier[1],
   )
 }
 

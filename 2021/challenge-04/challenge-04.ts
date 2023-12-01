@@ -5,7 +5,7 @@ export function createXmasTree(height: number) {
         .repeat(2 * i + 1)
         .padStart(i + height, '_')
         .padEnd(height * 2 - 1, '_')
-        .concat('\n')
+        .concat('\n'),
     )
     .join('')
 

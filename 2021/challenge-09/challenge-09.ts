@@ -1,6 +1,6 @@
 export function groupBy<T>(
   collection: T[],
-  it: keyof T | ((value: T) => string | number)
+  it: keyof T | ((value: T) => string | number),
 ): Record<string | number, T[]> {
   const group: Record<string | number, T[]> = {}
   const isItFunction = typeof it === 'function'

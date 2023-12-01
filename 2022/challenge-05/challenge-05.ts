@@ -2,7 +2,7 @@
 export function getMaxGifts(
   giftsCities: number[],
   maxGifts: number,
-  maxCities: number
+  maxCities: number,
 ) {
   return giftsCities
     .sort((a, b) => b - a)

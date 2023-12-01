@@ -2,7 +2,7 @@ export function printTable(gifts: Gift[]) {
   const giftWidth = Math.max(...gifts.map(gift => gift.name.length), 4)
   const quantityWidth = Math.max(
     ...gifts.map(gift => `${gift.quantity}`.length),
-    8
+    8,
   )
 
   const tableWidth = giftWidth + quantityWidth + 7
@@ -10,7 +10,7 @@ export function printTable(gifts: Gift[]) {
   const top = '+'.repeat(tableWidth)
   const bottom = '*'.repeat(tableWidth)
   const head = `Gift${' '.repeat(giftWidth - 4)} | Quantity${' '.repeat(
-    quantityWidth - 8
+    quantityWidth - 8,
   )}`
   const border = `${'-'.repeat(giftWidth)} | ${'-'.repeat(quantityWidth)}`
   const body = gifts
@@ -18,7 +18,7 @@ export function printTable(gifts: Gift[]) {
       gift =>
         `| ${gift.name}${' '.repeat(giftWidth - gift.name.length)} | ${
           gift.quantity
-        }${' '.repeat(quantityWidth - `${gift.quantity}`.length)} |`
+        }${' '.repeat(quantityWidth - `${gift.quantity}`.length)} |`,
     )
     .join('\n')
 

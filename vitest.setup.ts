@@ -10,7 +10,7 @@ global.buildChallengeTestCases = <Args, Expected>({
 
   const executor = (args: Args) => {
     if (fn) return fn(args)
-    if (spreadFn) return spreadFn(...args)
+    if (spreadFn) return spreadFn(...(args as any))
 
     throw Error('buildChallengeTest requires an executor fn')
   }

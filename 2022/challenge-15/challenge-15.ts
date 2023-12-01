@@ -25,6 +25,6 @@ export function decorateTree(base: string) {
 
         return [top.join(' '), ...tree]
       },
-      [base]
+      [base],
     )
 }

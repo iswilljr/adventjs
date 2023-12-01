@@ -12,7 +12,7 @@ export function getCoins(change: number) {
 
         return acc
       },
-      [0, 0, 0, 0, 0, 0]
+      [0, 0, 0, 0, 0, 0],
     )
     .reverse()
 }

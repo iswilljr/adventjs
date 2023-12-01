@@ -14,7 +14,7 @@ export function sumPairs(numbers: number[], result: number) {
 
       return [acc, pairs]
     },
-    [numbers[0], [numbers[0]]]
+    [numbers[0], [numbers[0]]],
   )
 
   return sum(pairs) === result ? pairs : null
