@@ -91,7 +91,7 @@ This repository contains the solutions to the challenges proposed by [@midudev](
 | :-: | :------------------: | :------------: | :--------------------------------------------: | :---------------------------------------: |
 | 01  | First gift repeated! |       🟢       | [Show](https://adventjs.dev/challenges/2023/1) | [Go](./2023/challenge-01/challenge-01.ts) |
 | 02  | We start the factory |       🟢       | [Show](https://adventjs.dev/challenges/2023/2) | [Go](./2023/challenge-02/challenge-02.ts) |
-| 03  |          --          |       --       |                       --                       |                    --                     |
+| 03  |   The naughty elf    |       🟢       | [Show](https://adventjs.dev/challenges/2023/3) | [Go](./2023/challenge-03/challenge-03.ts) |
 | 04  |          --          |       --       |                       --                       |                    --                     |
 | 05  |          --          |       --       |                       --                       |                    --                     |
 | 06  |          --          |       --       |                       --                       |                    --                     |
