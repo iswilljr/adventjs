@@ -1,6 +1,6 @@
 export function cyberReindeer(road: string, time: number) {
   let standingOnBarricade = false
-  const finalRodal = [road]
+  const finalRoad = [road]
 
   for (let i = 1; i < time; i++) {
     if (i === 5) {
@@ -17,8 +17,8 @@ export function cyberReindeer(road: string, time: number) {
       : road
 
     standingOnBarricade = goToStandOnBarricade
-    finalRodal.push(road)
+    finalRoad.push(road)
   }
 
-  return finalRodal
+  return finalRoad
 }
