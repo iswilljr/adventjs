@@ -94,7 +94,7 @@ This repository contains the solutions to the challenges proposed by [@midudev](
 | 03  |       The naughty elf       |       🟢       | [Show](https://adventjs.dev/challenges/2023/3) | [Go](./2023/challenge-03/challenge-03.ts) |
 | 04  | Turn the parentheses around |       🟠       | [Show](https://adventjs.dev/challenges/2023/4) | [Go](./2023/challenge-04/challenge-04.ts) |
 | 05  |     Santa's CyberTruck      |       🟠       | [Show](https://adventjs.dev/challenges/2023/5) | [Go](./2023/challenge-05/challenge-05.ts) |
-| 06  |             --              |       --       |                       --                       |                    --                     |
+| 06  |    The reindeer on trial    |       🟢       | [Show](https://adventjs.dev/challenges/2023/6) | [Go](./2023/challenge-06/challenge-06.ts) |
 | 07  |             --              |       --       |                       --                       |                    --                     |
 | 08  |             --              |       --       |                       --                       |                    --                     |
 | 09  |             --              |       --       |                       --                       |                    --                     |
