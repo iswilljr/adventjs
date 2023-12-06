@@ -3,16 +3,12 @@ export function maxDistance(movements: string) {
   let maxRight = 0
 
   for (const movement of movements) {
-    if (movement === '>') {
-      maxRight++
-      maxLeft--
-    } else if (movement === '<') {
-      maxLeft++
-      maxRight--
-    } else {
-      maxLeft++
-      maxRight++
-    }
+    const rightPoint = +(movement === '>')
+    const leftPoint = +(movement === '<')
+    const extraPoint = +(movement === '*')
+
+    maxRight += rightPoint - leftPoint + extraPoint
+    maxLeft += leftPoint - rightPoint + extraPoint
   }
 
   return Math.max(maxLeft, maxRight)
