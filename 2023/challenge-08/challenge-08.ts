@@ -6,13 +6,13 @@ export function organizeGifts(gifts: string) {
     const total = +group.slice(0, -1)
     const gift = group.slice(-1)
 
-    const pallets = Math.floor(total / 50)
-    const boxes = Math.floor((total / 10) % 5)
+    const pallets = total / 50
+    const boxes = (total / 10) % 5
     const bags = total % 10
 
     const palletGifts = `[${gift}]`.repeat(pallets)
     const boxGifts = `{${gift}}`.repeat(boxes)
-    const bagGifts = bags > 0 ? `(${gift.repeat(bags)})` : ''
+    const bagGifts = `(${gift.repeat(bags)})`.repeat(+(bags > 0))
 
     organizedGifts += `${palletGifts}${boxGifts}${bagGifts}`
   }
