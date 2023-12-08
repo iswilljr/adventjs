@@ -96,7 +96,7 @@ This repository contains the solutions to the challenges proposed by [@midudev](
 | 05  |     Santa's CyberTruck      |       🟠       | [Show](https://adventjs.dev/challenges/2023/5) | [Go](./2023/challenge-05/challenge-05.ts) |
 | 06  |    The reindeer on trial    |       🟢       | [Show](https://adventjs.dev/challenges/2023/6) | [Go](./2023/challenge-06/challenge-06.ts) |
 | 07  |        The 3D boxes         |       🟢       | [Show](https://adventjs.dev/challenges/2023/7) | [Go](./2023/challenge-07/challenge-07.ts) |
-| 08  |             --              |       --       |                       --                       |                    --                     |
+| 08  |    Sorting the warehouse    |       🟠       | [Show](https://adventjs.dev/challenges/2023/8) | [Go](./2023/challenge-08/challenge-08.ts) |
 | 09  |             --              |       --       |                       --                       |                    --                     |
 | 10  |             --              |       --       |                       --                       |                    --                     |
 | 11  |             --              |       --       |                       --                       |                    --                     |
