@@ -87,33 +87,33 @@ This repository contains the solutions to the challenges proposed by [@midudev](
 
 ### 🕹️ Challenges
 
-|  #  |          Challenge          | Difficulty[^1] |                  Description                   |                 Solution                  |
-| :-: | :-------------------------: | :------------: | :--------------------------------------------: | :---------------------------------------: |
-| 01  |    First gift repeated!     |       🟢       | [Show](https://adventjs.dev/challenges/2023/1) | [Go](./2023/challenge-01/challenge-01.ts) |
-| 02  |    We start the factory     |       🟢       | [Show](https://adventjs.dev/challenges/2023/2) | [Go](./2023/challenge-02/challenge-02.ts) |
-| 03  |       The naughty elf       |       🟢       | [Show](https://adventjs.dev/challenges/2023/3) | [Go](./2023/challenge-03/challenge-03.ts) |
-| 04  | Turn the parentheses around |       🟠       | [Show](https://adventjs.dev/challenges/2023/4) | [Go](./2023/challenge-04/challenge-04.ts) |
-| 05  |     Santa's CyberTruck      |       🟠       | [Show](https://adventjs.dev/challenges/2023/5) | [Go](./2023/challenge-05/challenge-05.ts) |
-| 06  |    The reindeer on trial    |       🟢       | [Show](https://adventjs.dev/challenges/2023/6) | [Go](./2023/challenge-06/challenge-06.ts) |
-| 07  |        The 3D boxes         |       🟢       | [Show](https://adventjs.dev/challenges/2023/7) | [Go](./2023/challenge-07/challenge-07.ts) |
-| 08  |    Sorting the warehouse    |       🟠       | [Show](https://adventjs.dev/challenges/2023/8) | [Go](./2023/challenge-08/challenge-08.ts) |
-| 09  |      Switch the light       |       🟢       | [Show](https://adventjs.dev/challenges/2023/9) | [Go](./2023/challenge-09/challenge-09.ts) |
-| 10  |             --              |       --       |                       --                       |                    --                     |
-| 11  |             --              |       --       |                       --                       |                    --                     |
-| 12  |             --              |       --       |                       --                       |                    --                     |
-| 13  |             --              |       --       |                       --                       |                    --                     |
-| 14  |             --              |       --       |                       --                       |                    --                     |
-| 15  |             --              |       --       |                       --                       |                    --                     |
-| 16  |             --              |       --       |                       --                       |                    --                     |
-| 17  |             --              |       --       |                       --                       |                    --                     |
-| 18  |             --              |       --       |                       --                       |                    --                     |
-| 19  |             --              |       --       |                       --                       |                    --                     |
-| 20  |             --              |       --       |                       --                       |                    --                     |
-| 21  |             --              |       --       |                       --                       |                    --                     |
-| 22  |             --              |       --       |                       --                       |                    --                     |
-| 23  |             --              |       --       |                       --                       |                    --                     |
-| 24  |             --              |       --       |                       --                       |                    --                     |
-| 25  |             --              |       --       |                       --                       |                    --                     |
+|  #  |           Challenge            | Difficulty[^1] |                   Description                   |                 Solution                  |
+| :-: | :----------------------------: | :------------: | :---------------------------------------------: | :---------------------------------------: |
+| 01  |      First gift repeated!      |       🟢       | [Show](https://adventjs.dev/challenges/2023/1)  | [Go](./2023/challenge-01/challenge-01.ts) |
+| 02  |      We start the factory      |       🟢       | [Show](https://adventjs.dev/challenges/2023/2)  | [Go](./2023/challenge-02/challenge-02.ts) |
+| 03  |        The naughty elf         |       🟢       | [Show](https://adventjs.dev/challenges/2023/3)  | [Go](./2023/challenge-03/challenge-03.ts) |
+| 04  |  Turn the parentheses around   |       🟠       | [Show](https://adventjs.dev/challenges/2023/4)  | [Go](./2023/challenge-04/challenge-04.ts) |
+| 05  |       Santa's CyberTruck       |       🟠       | [Show](https://adventjs.dev/challenges/2023/5)  | [Go](./2023/challenge-05/challenge-05.ts) |
+| 06  |     The reindeer on trial      |       🟢       | [Show](https://adventjs.dev/challenges/2023/6)  | [Go](./2023/challenge-06/challenge-06.ts) |
+| 07  |          The 3D boxes          |       🟢       | [Show](https://adventjs.dev/challenges/2023/7)  | [Go](./2023/challenge-07/challenge-07.ts) |
+| 08  |     Sorting the warehouse      |       🟠       | [Show](https://adventjs.dev/challenges/2023/8)  | [Go](./2023/challenge-08/challenge-08.ts) |
+| 09  |        Switch the light        |       🟢       | [Show](https://adventjs.dev/challenges/2023/9)  | [Go](./2023/challenge-09/challenge-09.ts) |
+| 10  | Create your owm Christmas tree |       🟢       | [Show](https://adventjs.dev/challenges/2023/10) | [Go](./2023/challenge-10/challenge-10.ts) |
+| 11  |               --               |       --       |                       --                        |                    --                     |
+| 12  |               --               |       --       |                       --                        |                    --                     |
+| 13  |               --               |       --       |                       --                        |                    --                     |
+| 14  |               --               |       --       |                       --                        |                    --                     |
+| 15  |               --               |       --       |                       --                        |                    --                     |
+| 16  |               --               |       --       |                       --                        |                    --                     |
+| 17  |               --               |       --       |                       --                        |                    --                     |
+| 18  |               --               |       --       |                       --                        |                    --                     |
+| 19  |               --               |       --       |                       --                        |                    --                     |
+| 20  |               --               |       --       |                       --                        |                    --                     |
+| 21  |               --               |       --       |                       --                        |                    --                     |
+| 22  |               --               |       --       |                       --                        |                    --                     |
+| 23  |               --               |       --       |                       --                        |                    --                     |
+| 24  |               --               |       --       |                       --                        |                    --                     |
+| 25  |               --               |       --       |                       --                        |                    --                     |
 
 </details>
 
