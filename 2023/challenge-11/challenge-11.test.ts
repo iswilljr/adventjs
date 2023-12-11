@@ -13,7 +13,7 @@ const TEST_CASES: TestCases<string, number[] | null> = [
   { args: 'saippuakivikauppias', expected: [] },
 ]
 
-describe('Challenge #10: Create your owm Christmas tree', () => {
+describe('Challenge #11: The studious elves', () => {
   buildChallengeTestCases({
     cases: TEST_CASES,
     fn: getIndexsForPalindrome,
