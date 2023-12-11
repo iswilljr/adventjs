@@ -15,10 +15,13 @@ export function getIndexsForPalindrome(word: string) {
       w[index] = auxLetter
       w[aux] = letter
 
-      const isPalindrome = w.join('') === w.reverse().join('')
+      const isPalindrome = +(w.join('') === w.reverse().join(''))
+      const isInitialNull = +(initial == null)
+      const isDifferentIndex = +(index !== aux)
+
       const values = [initial, initial, initial, [index, aux]]
 
-      initial = values[+(initial == null) + +(index !== aux) + +isPalindrome]
+      initial = values[isInitialNull + isDifferentIndex + isPalindrome]
       aux++
     }
 
