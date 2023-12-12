@@ -14,8 +14,12 @@ export function checkIsValidCopy(original: string, copy: string) {
       ' ',
     ].includes(copyLetter)
 
-    const isBlankSpace = +(letter === ' ')
-    const isValidCharacter = [isValidLetter, copyLetter === ' '][isBlankSpace]
+    const isLetterBlankSpace = letter === ' '
+    const isCopyLetterBlankSpace = copyLetter === ' '
+
+    const isValidCharacter = [isValidLetter, isCopyLetterBlankSpace][
+      +isLetterBlankSpace
+    ]
 
     isValidCopy = [isValidCopy, isValidCharacter][+isValidCopy]
   }
