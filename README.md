@@ -101,7 +101,7 @@ This repository contains the solutions to the challenges proposed by [@midudev](
 | 10  | Create your owm Christmas tree |       🟢       | [Show](https://adventjs.dev/challenges/2023/10) | [Go](./2023/challenge-10/challenge-10.ts) |
 | 11  |       The studious elves       |       🟠       | [Show](https://adventjs.dev/challenges/2023/11) | [Go](./2023/challenge-11/challenge-11.ts) |
 | 12  |      Is it a valid copy?       |       🟠       | [Show](https://adventjs.dev/challenges/2023/12) | [Go](./2023/challenge-12/challenge-12.ts) |
-| 13  |               --               |       --       |                       --                        |                    --                     |
+| 13  |      Calculating the time      |       🟢       | [Show](https://adventjs.dev/challenges/2023/13) | [Go](./2023/challenge-13/challenge-13.ts) |
 | 14  |               --               |       --       |                       --                        |                    --                     |
 | 15  |               --               |       --       |                       --                        |                    --                     |
 | 16  |               --               |       --       |                       --                        |                    --                     |
