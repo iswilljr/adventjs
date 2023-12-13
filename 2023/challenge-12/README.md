@@ -10,6 +10,8 @@ There’s a big **probability** that a character would degrade in each copy (it 
 
 - **The characters from `A` to `Z` degrade from uppercase to lowercase (`A-Z` ⇒ `a-z`)**
 - **Letters degrade in a series of characters in this order: `a-z` ⇒ `#` ⇒ `+` ⇒ `:` ⇒ `.` ⇒ ` `**
+- **Once the letters have degraded into the symbols, they can continue to degrade.**
+- **Note that the last one is a blank space, not an empty character.**
 - **Characters that are not letters (like digits) do not degrade.**
 
 Knowing this and receiving the original letter and the copy, you must determine if the copy is a copy of the original.
