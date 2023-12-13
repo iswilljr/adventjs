@@ -8,6 +8,8 @@ global.buildChallengeTestCases = <Args, Expected>({
 }: BuildChallengeTestOptions<Args, Expected>) => {
   const expectedTypeof = kindOf(cases[0].expected)
 
+  const name = fn?.name ?? spreadFn?.name
+
   const executor = (args: Args) => {
     if (fn) return fn(args)
     if (spreadFn) return spreadFn(...(args as any))
@@ -21,7 +23,11 @@ global.buildChallengeTestCases = <Args, Expected>({
     expect(kindOf(result)).toBe(expectedTypeof)
   })
 
-  const nameTemplate = '#%# should return $expected when the input is $args'
+  const nameTemplate = spreadFn
+    ? `#%# ${name}(${(cases[0].args as any[])
+        .map((_, i) => '$args.' + i)
+        .join(', ')}) should return $expected`
+    : `#%# ${name}($args) should return $expected`
 
   it.each(cases)(nameTemplate, ({ args, expected }) => {
     const result = executor(args)
