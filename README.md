@@ -103,7 +103,7 @@ This repository contains the solutions to the challenges proposed by [@midudev](
 | 12  |      Is it a valid copy?       |       🟠       | [Show](https://adventjs.dev/challenges/2023/12) | [Go](./2023/challenge-12/challenge-12.ts) |
 | 13  |      Calculating the time      |       🟢       | [Show](https://adventjs.dev/challenges/2023/13) | [Go](./2023/challenge-13/challenge-13.ts) |
 | 14  |        Avoid the alarm         |       🟠       | [Show](https://adventjs.dev/challenges/2023/14) | [Go](./2023/challenge-14/challenge-14.ts) |
-| 15  |               --               |       --       |                       --                        |                    --                     |
+| 15  |        Autonomous robot        |       🟠       | [Show](https://adventjs.dev/challenges/2023/15) | [Go](./2023/challenge-15/challenge-15.ts) |
 | 16  |               --               |       --       |                       --                        |                    --                     |
 | 17  |               --               |       --       |                       --                        |                    --                     |
 | 18  |               --               |       --       |                       --                        |                    --                     |
