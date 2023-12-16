@@ -104,7 +104,7 @@ This repository contains the solutions to the challenges proposed by [@midudev](
 | 13  |      Calculating the time      |       🟢       | [Show](https://adventjs.dev/challenges/2023/13) | [Go](./2023/challenge-13/challenge-13.ts) |
 | 14  |        Avoid the alarm         |       🟠       | [Show](https://adventjs.dev/challenges/2023/14) | [Go](./2023/challenge-14/challenge-14.ts) |
 | 15  |        Autonomous robot        |       🟠       | [Show](https://adventjs.dev/challenges/2023/15) | [Go](./2023/challenge-15/challenge-15.ts) |
-| 16  |               --               |       --       |                       --                        |                    --                     |
+| 16  |       Friday deployment        |       🟢       | [Show](https://adventjs.dev/challenges/2023/16) | [Go](./2023/challenge-16/challenge-16.ts) |
 | 17  |               --               |       --       |                       --                        |                    --                     |
 | 18  |               --               |       --       |                       --                        |                    --                     |
 | 19  |               --               |       --       |                       --                        |                    --                     |
