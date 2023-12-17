@@ -105,7 +105,7 @@ This repository contains the solutions to the challenges proposed by [@midudev](
 | 14  |        Avoid the alarm         |       🟠       | [Show](https://adventjs.dev/challenges/2023/14) | [Go](./2023/challenge-14/challenge-14.ts) |
 | 15  |        Autonomous robot        |       🟠       | [Show](https://adventjs.dev/challenges/2023/15) | [Go](./2023/challenge-15/challenge-15.ts) |
 | 16  |       Friday deployment        |       🟢       | [Show](https://adventjs.dev/challenges/2023/16) | [Go](./2023/challenge-16/challenge-16.ts) |
-| 17  |               --               |       --       |                       --                        |                    --                     |
+| 17  |     Optimizing the rental      |       🟢       | [Show](https://adventjs.dev/challenges/2023/17) | [Go](./2023/challenge-17/challenge-17.ts) |
 | 18  |               --               |       --       |                       --                        |                    --                     |
 | 19  |               --               |       --       |                       --                        |                    --                     |
 | 20  |               --               |       --       |                       --                        |                    --                     |
