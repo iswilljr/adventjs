@@ -106,7 +106,7 @@ This repository contains the solutions to the challenges proposed by [@midudev](
 | 15  |        Autonomous robot        |       🟠       | [Show](https://adventjs.dev/challenges/2023/15) | [Go](./2023/challenge-15/challenge-15.ts) |
 | 16  |       Friday deployment        |       🟢       | [Show](https://adventjs.dev/challenges/2023/16) | [Go](./2023/challenge-16/challenge-16.ts) |
 | 17  |     Optimizing the rental      |       🟢       | [Show](https://adventjs.dev/challenges/2023/17) | [Go](./2023/challenge-17/challenge-17.ts) |
-| 18  |               --               |       --       |                       --                        |                    --                     |
+| 18  |       The digital clock        |       🔴       | [Show](https://adventjs.dev/challenges/2023/18) | [Go](./2023/challenge-18/challenge-18.ts) |
 | 19  |               --               |       --       |                       --                        |                    --                     |
 | 20  |               --               |       --       |                       --                        |                    --                     |
 | 21  |               --               |       --       |                       --                        |                    --                     |
