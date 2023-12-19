@@ -107,7 +107,7 @@ This repository contains the solutions to the challenges proposed by [@midudev](
 | 16  |       Friday deployment        |       🟢       | [Show](https://adventjs.dev/challenges/2023/16) | [Go](./2023/challenge-16/challenge-16.ts) |
 | 17  |     Optimizing the rental      |       🟢       | [Show](https://adventjs.dev/challenges/2023/17) | [Go](./2023/challenge-17/challenge-17.ts) |
 | 18  |       The digital clock        |       🔴       | [Show](https://adventjs.dev/challenges/2023/18) | [Go](./2023/challenge-18/challenge-18.ts) |
-| 19  |               --               |       --       |                       --                        |                    --                     |
+| 19  |       Face the sabotage        |       🟠       | [Show](https://adventjs.dev/challenges/2023/19) | [Go](./2023/challenge-19/challenge-19.ts) |
 | 20  |               --               |       --       |                       --                        |                    --                     |
 | 21  |               --               |       --       |                       --                        |                    --                     |
 | 22  |               --               |       --       |                       --                        |                    --                     |
