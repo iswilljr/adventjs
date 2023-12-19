@@ -7,14 +7,14 @@ export function revealSabotage(store: string[][]) {
       const prevRow = store[i - 1]
 
       const adjacentCells = [
-        prevRow[j - 1],
-        prevRow[j],
-        prevRow[j + 1],
+        prevRow?.[j - 1],
+        prevRow?.[j],
+        prevRow?.[j + 1],
         row[j - 1],
         row[j + 1],
-        nextRow[j - 1],
-        nextRow[j],
-        nextRow[j + 1],
+        nextRow?.[j - 1],
+        nextRow?.[j],
+        nextRow?.[j + 1],
       ]
 
       const count = adjacentCells.reduce(
