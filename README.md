@@ -108,7 +108,7 @@ This repository contains the solutions to the challenges proposed by [@midudev](
 | 17  |     Optimizing the rental      |       🟢       | [Show](https://adventjs.dev/challenges/2023/17) | [Go](./2023/challenge-17/challenge-17.ts) |
 | 18  |       The digital clock        |       🔴       | [Show](https://adventjs.dev/challenges/2023/18) | [Go](./2023/challenge-18/challenge-18.ts) |
 | 19  |       Face the sabotage        |       🟠       | [Show](https://adventjs.dev/challenges/2023/19) | [Go](./2023/challenge-19/challenge-19.ts) |
-| 20  |               --               |       --       |                       --                        |                    --                     |
+| 20  |     Distribute the weight      |       🔴       | [Show](https://adventjs.dev/challenges/2023/20) | [Go](./2023/challenge-20/challenge-20.ts) |
 | 21  |               --               |       --       |                       --                        |                    --                     |
 | 22  |               --               |       --       |                       --                        |                    --                     |
 | 23  |               --               |       --       |                       --                        |                    --                     |
