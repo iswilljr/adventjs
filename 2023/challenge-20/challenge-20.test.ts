@@ -66,6 +66,26 @@ const TEST_CASES: TestCases<Array<Array<number | null>>, number[][]> = [
       [1, 1, 1, 1, 1],
     ],
   },
+  {
+    args: [
+      [0, 5],
+      [5, null],
+    ],
+    expected: [
+      [3, 3],
+      [3, 5],
+    ],
+  },
+  {
+    args: [
+      [0, 5],
+      [5, 0],
+    ],
+    expected: [
+      [3, 2],
+      [2, 3],
+    ],
+  },
 ]
 
 describe('Challenge #20: Distribute the weight', () => {
