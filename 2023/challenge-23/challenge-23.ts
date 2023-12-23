@@ -14,11 +14,8 @@ export function organizeChristmasDinner(dishes: string[][]) {
     }
   }
 
-  const filteredIngredients = [...ingredients.entries()].filter(
-    ([, dishes]) => dishes.length >= 2,
-  )
-
-  const organizedDishes = filteredIngredients
+  const organizedDishes = [...ingredients.entries()]
+    .filter(([, dishes]) => dishes.length >= 2)
     .map(([ingredient, dishes]) => [ingredient, ...dishes.sort()])
     .sort()
 
