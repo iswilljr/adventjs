@@ -110,7 +110,7 @@ This repository contains the solutions to the challenges proposed by [@midudev](
 | 19  |       Face the sabotage        |       🟠       | [Show](https://adventjs.dev/challenges/2023/19) | [Go](./2023/challenge-19/challenge-19.ts) |
 | 20  |     Distribute the weight      |       🔴       | [Show](https://adventjs.dev/challenges/2023/20) | [Go](./2023/challenge-20/challenge-20.ts) |
 | 21  |         Binary message         |       🟠       | [Show](https://adventjs.dev/challenges/2023/21) | [Go](./2023/challenge-21/challenge-21.ts) |
-| 22  |               --               |       --       |                       --                        |                    --                     |
+| 22  |      Programming language      |       🟢       | [Show](https://adventjs.dev/challenges/2023/22) | [Go](./2023/challenge-22/challenge-22.ts) |
 | 23  |               --               |       --       |                       --                        |                    --                     |
 | 24  |               --               |       --       |                       --                        |                    --                     |
 | 25  |               --               |       --       |                       --                        |                    --                     |
