@@ -112,7 +112,7 @@ This repository contains the solutions to the challenges proposed by [@midudev](
 | 21  |         Binary message         |       🟠       | [Show](https://adventjs.dev/challenges/2023/21) | [Go](./2023/challenge-21/challenge-21.ts) |
 | 22  |      Programming language      |       🟢       | [Show](https://adventjs.dev/challenges/2023/22) | [Go](./2023/challenge-22/challenge-22.ts) |
 | 23  |        Christmas dinner        |       🟢       | [Show](https://adventjs.dev/challenges/2023/23) | [Go](./2023/challenge-23/challenge-23.ts) |
-| 24  |               --               |       --       |                       --                        |                    --                     |
+| 24  |       Jump on the stairs       |       🟠       | [Show](https://adventjs.dev/challenges/2023/24) | [Go](./2023/challenge-24/challenge-24.ts) |
 | 25  |               --               |       --       |                       --                        |                    --                     |
 
 </details>
