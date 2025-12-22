@@ -11,9 +11,8 @@ export function distributeWeight(weight: number): string {
   const r: string[] = []
 
   while (weight > 0) {
-    const num = Object.keys(boxRepresentations)
-      .map(Number)
-      .toReversed()
+    const num = [...Object.keys(boxRepresentations).map(Number)]
+      .reverse()
       .find(x => x <= weight)
 
     const rn = (r[0] ?? '').split('')
