@@ -1,5 +1,6 @@
 import kindOf from 'kind-of'
 import { expect, it } from 'vitest'
+import deepClone from 'just-clone'
 
 global.buildChallengeTestCases = <Args, Expected>({
   cases,
@@ -10,7 +11,9 @@ global.buildChallengeTestCases = <Args, Expected>({
 
   const name = fn?.name ?? spreadFn?.name
 
-  const executor = (args: Args) => {
+  const executor = (_args: Args) => {
+    const args =
+      typeof _args === 'object' ? (deepClone(_args as any) as Args) : _args
     if (fn) return fn(args)
     if (spreadFn) return spreadFn(...(args as any))
 
