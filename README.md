@@ -81,39 +81,113 @@ This repository contains the solutions to the challenges proposed by [@midudev](
 
 ## 🎉 2023
 
+<details hide>
+
+<summary>Show / Hide</summary>
+
+### 🕹️ Challenges
+
+|  #  |           Challenge            | Difficulty[^1] |                     Description                      |                 Solution                  |
+| :-: | :----------------------------: | :------------: | :--------------------------------------------------: | :---------------------------------------: |
+| 01  |      First gift repeated!      |       🟢       | [Show](https://2023.adventjs.dev/challenges/2023/1)  | [Go](./2023/challenge-01/challenge-01.ts) |
+| 02  |      We start the factory      |       🟢       | [Show](https://2023.adventjs.dev/challenges/2023/2)  | [Go](./2023/challenge-02/challenge-02.ts) |
+| 03  |        The naughty elf         |       🟢       | [Show](https://2023.adventjs.dev/challenges/2023/3)  | [Go](./2023/challenge-03/challenge-03.ts) |
+| 04  |  Turn the parentheses around   |       🟠       | [Show](https://2023.adventjs.dev/challenges/2023/4)  | [Go](./2023/challenge-04/challenge-04.ts) |
+| 05  |       Santa's CyberTruck       |       🟠       | [Show](https://2023.adventjs.dev/challenges/2023/5)  | [Go](./2023/challenge-05/challenge-05.ts) |
+| 06  |     The reindeer on trial      |       🟢       | [Show](https://2023.adventjs.dev/challenges/2023/6)  | [Go](./2023/challenge-06/challenge-06.ts) |
+| 07  |          The 3D boxes          |       🟢       | [Show](https://2023.adventjs.dev/challenges/2023/7)  | [Go](./2023/challenge-07/challenge-07.ts) |
+| 08  |     Sorting the warehouse      |       🟠       | [Show](https://2023.adventjs.dev/challenges/2023/8)  | [Go](./2023/challenge-08/challenge-08.ts) |
+| 09  |        Switch the light        |       🟢       | [Show](https://2023.adventjs.dev/challenges/2023/9)  | [Go](./2023/challenge-09/challenge-09.ts) |
+| 10  | Create your owm Christmas tree |       🟢       | [Show](https://2023.adventjs.dev/challenges/2023/10) | [Go](./2023/challenge-10/challenge-10.ts) |
+| 11  |       The studious elves       |       🟠       | [Show](https://2023.adventjs.dev/challenges/2023/11) | [Go](./2023/challenge-11/challenge-11.ts) |
+| 12  |      Is it a valid copy?       |       🟠       | [Show](https://2023.adventjs.dev/challenges/2023/12) | [Go](./2023/challenge-12/challenge-12.ts) |
+| 13  |      Calculating the time      |       🟢       | [Show](https://2023.adventjs.dev/challenges/2023/13) | [Go](./2023/challenge-13/challenge-13.ts) |
+| 14  |        Avoid the alarm         |       🟠       | [Show](https://2023.adventjs.dev/challenges/2023/14) | [Go](./2023/challenge-14/challenge-14.ts) |
+| 15  |        Autonomous robot        |       🟠       | [Show](https://2023.adventjs.dev/challenges/2023/15) | [Go](./2023/challenge-15/challenge-15.ts) |
+| 16  |       Friday deployment        |       🟢       | [Show](https://2023.adventjs.dev/challenges/2023/16) | [Go](./2023/challenge-16/challenge-16.ts) |
+| 17  |     Optimizing the rental      |       🟢       | [Show](https://2023.adventjs.dev/challenges/2023/17) | [Go](./2023/challenge-17/challenge-17.ts) |
+| 18  |       The digital clock        |       🔴       | [Show](https://2023.adventjs.dev/challenges/2023/18) | [Go](./2023/challenge-18/challenge-18.ts) |
+| 19  |       Face the sabotage        |       🟠       | [Show](https://2023.adventjs.dev/challenges/2023/19) | [Go](./2023/challenge-19/challenge-19.ts) |
+| 20  |     Distribute the weight      |       🔴       | [Show](https://2023.adventjs.dev/challenges/2023/20) | [Go](./2023/challenge-20/challenge-20.ts) |
+| 21  |         Binary message         |       🟠       | [Show](https://2023.adventjs.dev/challenges/2023/21) | [Go](./2023/challenge-21/challenge-21.ts) |
+| 22  |      Programming language      |       🟢       | [Show](https://2023.adventjs.dev/challenges/2023/22) | [Go](./2023/challenge-22/challenge-22.ts) |
+| 23  |        Christmas dinner        |       🟢       | [Show](https://2023.adventjs.dev/challenges/2023/23) | [Go](./2023/challenge-23/challenge-23.ts) |
+| 24  |       Jump on the stairs       |       🟠       | [Show](https://2023.adventjs.dev/challenges/2023/24) | [Go](./2023/challenge-24/challenge-24.ts) |
+| 25  |     Calculating distances      |       🟠       | [Show](https://2023.adventjs.dev/challenges/2023/25) | [Go](./2023/challenge-25/challenge-25.ts) |
+
+</details>
+
+## 🎄 2024
+
+<details hide>
+
+<summary>Show / Hide</summary>
+
+### 🕹️ Challenges
+
+|  #  |                 Challenge                  | Difficulty[^1] |                     Description                      |                 Solution                  |
+| :-: | :----------------------------------------: | :------------: | :--------------------------------------------------: | :---------------------------------------: |
+| 01  |            First gift repeated             |       🟢       | [Show](https://2024.adventjs.dev/challenges/2024/1)  | [Go](./2024/challenge-01/challenge-01.ts) |
+| 02  |               Framing Names                |       🟢       | [Show](https://2024.adventjs.dev/challenges/2024/2)  | [Go](./2024/challenge-02/challenge-02.ts) |
+| 03  |          Organizing the inventory          |       🟢       | [Show](https://2024.adventjs.dev/challenges/2024/3)  | [Go](./2024/challenge-03/challenge-03.ts) |
+| 04  |       Decorating the Christmas tree        |       🟠       | [Show](https://2024.adventjs.dev/challenges/2024/4)  | [Go](./2024/challenge-04/challenge-04.ts) |
+| 05  |                Shoe pairing                |       🟢       | [Show](https://2024.adventjs.dev/challenges/2024/5)  | [Go](./2024/challenge-05/challenge-05.ts) |
+| 06  |        Is the gift inside the box?         |       🟠       | [Show](https://2024.adventjs.dev/challenges/2024/6)  | [Go](./2024/challenge-06/challenge-06.ts) |
+| 07  |            The Grinch's attack             |       🟠       | [Show](https://2024.adventjs.dev/challenges/2024/7)  | [Go](./2024/challenge-07/challenge-07.ts) |
+| 08  |               The reno race                |       🟢       | [Show](https://2024.adventjs.dev/challenges/2024/8)  | [Go](./2024/challenge-08/challenge-08.ts) |
+| 09  |              The magic train               |       🟠       | [Show](https://2024.adventjs.dev/challenges/2024/9)  | [Go](./2024/challenge-09/challenge-09.ts) |
+| 10  |            The elfish assembler            |       🟠       | [Show](https://2024.adventjs.dev/challenges/2024/10) | [Go](./2024/challenge-10/challenge-10.ts) |
+| 11  |             Filenames encoded              |       🟢       | [Show](https://2024.adventjs.dev/challenges/2024/11) | [Go](./2024/challenge-11/challenge-11.ts) |
+| 12  |        How much does the tree cost?        |       🟢       | [Show](https://2024.adventjs.dev/challenges/2024/12) | [Go](./2024/challenge-12/challenge-12.ts) |
+| 13  |             Is the robot back?             |       🔴       | [Show](https://2024.adventjs.dev/challenges/2024/13) | [Go](./2024/challenge-13/challenge-13.ts) |
+| 14  |              Weaving the reno              |       🟢       | [Show](https://2024.adventjs.dev/challenges/2024/14) | [Go](./2024/challenge-14/challenge-14.ts) |
+| 15  |               Drawing tables               |       🟢       | [Show](https://2024.adventjs.dev/challenges/2024/15) | [Go](./2024/challenge-15/challenge-15.ts) |
+| 16  |           Cleaning the snow path           |       🟢       | [Show](https://2024.adventjs.dev/challenges/2024/16) | [Go](./2024/challenge-16/challenge-16.ts) |
+| 17  |               Grinch's bombs               |       🟠       | [Show](https://2024.adventjs.dev/challenges/2024/17) | [Go](./2024/challenge-17/challenge-17.ts) |
+| 18  |            Santa's Magic Agenda            |       🟠       | [Show](https://2024.adventjs.dev/challenges/2024/18) | [Go](./2024/challenge-18/challenge-18.ts) |
+| 19  |    Stack magical boxes to deliver gifts    |       🔴       | [Show](https://2024.adventjs.dev/challenges/2024/19) | [Go](./2024/challenge-19/challenge-19.ts) |
+| 20  |      Find missing and duplicate gifts      |       🟢       | [Show](https://2024.adventjs.dev/challenges/2024/20) | [Go](./2024/challenge-20/challenge-20.ts) |
+| 21  | Calculate the height of the Christmas tree |       🟢       | [Show](https://2024.adventjs.dev/challenges/2024/21) | [Go](./2024/challenge-21/challenge-21.ts) |
+| 22  |         Generate gift combinations         |       🟠       | [Show](https://2024.adventjs.dev/challenges/2024/22) | [Go](./2024/challenge-22/challenge-22.ts) |
+| 23  |          Find the missing numbers          |       🟢       | [Show](https://2024.adventjs.dev/challenges/2024/23) | [Go](./2024/challenge-23/challenge-23.ts) |
+| 24  |     Check if trees are magical mirrors     |       🟠       | [Show](https://2024.adventjs.dev/challenges/2024/24) | [Go](./2024/challenge-24/challenge-24.ts) |
+| 25  |        Execute the magical language        |       🟠       | [Show](https://2024.adventjs.dev/challenges/2024/25) | [Go](./2024/challenge-25/challenge-25.ts) |
+| 26  |     Calculate the completed percentage     |       🟢       | [Show](https://2024.adventjs.dev/challenges/2024/26) | [Go](./2024/challenge-26/challenge-26.ts) |
+
+</details>
+
+## ✨ 2025
+
 <details open>
 
 <summary>Show / Hide</summary>
 
 ### 🕹️ Challenges
 
-|  #  |           Challenge            | Difficulty[^1] |                   Description                   |                 Solution                  |
-| :-: | :----------------------------: | :------------: | :---------------------------------------------: | :---------------------------------------: |
-| 01  |      First gift repeated!      |       🟢       | [Show](https://adventjs.dev/challenges/2023/1)  | [Go](./2023/challenge-01/challenge-01.ts) |
-| 02  |      We start the factory      |       🟢       | [Show](https://adventjs.dev/challenges/2023/2)  | [Go](./2023/challenge-02/challenge-02.ts) |
-| 03  |        The naughty elf         |       🟢       | [Show](https://adventjs.dev/challenges/2023/3)  | [Go](./2023/challenge-03/challenge-03.ts) |
-| 04  |  Turn the parentheses around   |       🟠       | [Show](https://adventjs.dev/challenges/2023/4)  | [Go](./2023/challenge-04/challenge-04.ts) |
-| 05  |       Santa's CyberTruck       |       🟠       | [Show](https://adventjs.dev/challenges/2023/5)  | [Go](./2023/challenge-05/challenge-05.ts) |
-| 06  |     The reindeer on trial      |       🟢       | [Show](https://adventjs.dev/challenges/2023/6)  | [Go](./2023/challenge-06/challenge-06.ts) |
-| 07  |          The 3D boxes          |       🟢       | [Show](https://adventjs.dev/challenges/2023/7)  | [Go](./2023/challenge-07/challenge-07.ts) |
-| 08  |     Sorting the warehouse      |       🟠       | [Show](https://adventjs.dev/challenges/2023/8)  | [Go](./2023/challenge-08/challenge-08.ts) |
-| 09  |        Switch the light        |       🟢       | [Show](https://adventjs.dev/challenges/2023/9)  | [Go](./2023/challenge-09/challenge-09.ts) |
-| 10  | Create your owm Christmas tree |       🟢       | [Show](https://adventjs.dev/challenges/2023/10) | [Go](./2023/challenge-10/challenge-10.ts) |
-| 11  |       The studious elves       |       🟠       | [Show](https://adventjs.dev/challenges/2023/11) | [Go](./2023/challenge-11/challenge-11.ts) |
-| 12  |      Is it a valid copy?       |       🟠       | [Show](https://adventjs.dev/challenges/2023/12) | [Go](./2023/challenge-12/challenge-12.ts) |
-| 13  |      Calculating the time      |       🟢       | [Show](https://adventjs.dev/challenges/2023/13) | [Go](./2023/challenge-13/challenge-13.ts) |
-| 14  |        Avoid the alarm         |       🟠       | [Show](https://adventjs.dev/challenges/2023/14) | [Go](./2023/challenge-14/challenge-14.ts) |
-| 15  |        Autonomous robot        |       🟠       | [Show](https://adventjs.dev/challenges/2023/15) | [Go](./2023/challenge-15/challenge-15.ts) |
-| 16  |       Friday deployment        |       🟢       | [Show](https://adventjs.dev/challenges/2023/16) | [Go](./2023/challenge-16/challenge-16.ts) |
-| 17  |     Optimizing the rental      |       🟢       | [Show](https://adventjs.dev/challenges/2023/17) | [Go](./2023/challenge-17/challenge-17.ts) |
-| 18  |       The digital clock        |       🔴       | [Show](https://adventjs.dev/challenges/2023/18) | [Go](./2023/challenge-18/challenge-18.ts) |
-| 19  |       Face the sabotage        |       🟠       | [Show](https://adventjs.dev/challenges/2023/19) | [Go](./2023/challenge-19/challenge-19.ts) |
-| 20  |     Distribute the weight      |       🔴       | [Show](https://adventjs.dev/challenges/2023/20) | [Go](./2023/challenge-20/challenge-20.ts) |
-| 21  |         Binary message         |       🟠       | [Show](https://adventjs.dev/challenges/2023/21) | [Go](./2023/challenge-21/challenge-21.ts) |
-| 22  |      Programming language      |       🟢       | [Show](https://adventjs.dev/challenges/2023/22) | [Go](./2023/challenge-22/challenge-22.ts) |
-| 23  |        Christmas dinner        |       🟢       | [Show](https://adventjs.dev/challenges/2023/23) | [Go](./2023/challenge-23/challenge-23.ts) |
-| 24  |       Jump on the stairs       |       🟠       | [Show](https://adventjs.dev/challenges/2023/24) | [Go](./2023/challenge-24/challenge-24.ts) |
-| 25  |     Calculating distances      |       🟠       | [Show](https://adventjs.dev/challenges/2023/25) | [Go](./2023/challenge-25/challenge-25.ts) |
+|  #  |           Challenge           | Difficulty[^1] |                   Description                   |                 Solution                  |
+| :-: | :---------------------------: | :------------: | :---------------------------------------------: | :---------------------------------------: |
+| 01  |      First gift repeated      |       🟢       | [Show](https://adventjs.dev/challenges/2025/1)  | [Go](./2025/challenge-01/challenge-01.ts) |
+| 02  |         Framing Names         |       🟢       | [Show](https://adventjs.dev/challenges/2025/2)  | [Go](./2025/challenge-02/challenge-02.ts) |
+| 03  |   Organizing the inventory    |       🟢       | [Show](https://adventjs.dev/challenges/2025/3)  | [Go](./2025/challenge-03/challenge-03.ts) |
+| 04  | Decorating the Christmas tree |       🟠       | [Show](https://adventjs.dev/challenges/2025/4)  | [Go](./2025/challenge-04/challenge-04.ts) |
+| 05  |         Shoe pairing          |       🟢       | [Show](https://adventjs.dev/challenges/2025/5)  | [Go](./2025/challenge-05/challenge-05.ts) |
+| 06  |        Matching gloves        |       🟢       | [Show](https://adventjs.dev/challenges/2025/6)  | [Go](./2025/challenge-06/challenge-06.ts) |
+| 07  |      Decorating the tree      |       🟠       | [Show](https://adventjs.dev/challenges/2025/7)  | [Go](./2025/challenge-07/challenge-07.ts) |
+| 08  |      Find the unique toy      |       🟢       | [Show](https://adventjs.dev/challenges/2025/8)  | [Go](./2025/challenge-08/challenge-08.ts) |
+| 09  |   The reno robot aspirator    |       🔴       | [Show](https://adventjs.dev/challenges/2025/9)  | [Go](./2025/challenge-09/challenge-09.ts) |
+| 10  |   Depth of Christmas magic    |       🟢       | [Show](https://adventjs.dev/challenges/2025/10) | [Go](./2025/challenge-10/challenge-10.ts) |
+| 11  |        Unwatched gifts        |       🟢       | [Show](https://adventjs.dev/challenges/2025/11) | [Go](./2025/challenge-11/challenge-11.ts) |
+| 12  |          Elf battle           |       🟠       | [Show](https://adventjs.dev/challenges/2025/12) | [Go](./2025/challenge-12/challenge-12.ts) |
+| 13  |       The assembly line       |       🟠       | [Show](https://adventjs.dev/challenges/2025/13) | [Go](./2025/challenge-13/challenge-13.ts) |
+| 14  |      Find the gift path       |       🟢       | [Show](https://adventjs.dev/challenges/2025/14) | [Go](./2025/challenge-14/challenge-14.ts) |
+| 15  |        Drawing tables         |       🟠       | [Show](https://adventjs.dev/challenges/2025/15) | [Go](./2025/challenge-15/challenge-15.ts) |
+| 16  |    Packing gifts for Santa    |       🟢       | [Show](https://adventjs.dev/challenges/2025/16) | [Go](./2025/challenge-16/challenge-16.ts) |
+| 17  |  The Christmas lights panel   |       🟢       | [Show](https://adventjs.dev/challenges/2025/17) | [Go](./2025/challenge-17/challenge-17.ts) |
+| 18  | Lights in line with diagonals |       🟠       | [Show](https://adventjs.dev/challenges/2025/18) | [Go](./2025/challenge-18/challenge-18.ts) |
+| 19  |    Santa's Secret Journey     |       🟢       | [Show](https://adventjs.dev/challenges/2025/19) | [Go](./2025/challenge-19/challenge-19.ts) |
+| 20  |      Vertical warehouse       |       🟢       | [Show](https://adventjs.dev/challenges/2025/20) | [Go](./2025/challenge-20/challenge-20.ts) |
+| 21  |      The cleaning robot       |       🟠       | [Show](https://adventjs.dev/challenges/2025/21) | [Go](./2025/challenge-21/challenge-21.ts) |
+| 22  |        The sleigh maze        |       🔴       | [Show](https://adventjs.dev/challenges/2025/22) | [Go](./2025/challenge-22/challenge-22.ts) |
 
 </details>
 
