@@ -188,6 +188,9 @@ This repository contains the solutions to the challenges proposed by [@midudev](
 | 20  |      Vertical warehouse       |       🟢       | [Show](https://adventjs.dev/challenges/2025/20) | [Go](./2025/challenge-20/challenge-20.ts) |
 | 21  |      The cleaning robot       |       🟠       | [Show](https://adventjs.dev/challenges/2025/21) | [Go](./2025/challenge-21/challenge-21.ts) |
 | 22  |        The sleigh maze        |       🔴       | [Show](https://adventjs.dev/challenges/2025/22) | [Go](./2025/challenge-22/challenge-22.ts) |
+| 23  |          Gift route           |       🟠       | [Show](https://adventjs.dev/challenges/2025/23) | [Go](./2025/challenge-23/challenge-23.ts) |
+| 24  |  Check magical mirror trees   |       🟠       | [Show](https://adventjs.dev/challenges/2025/24) | [Go](./2025/challenge-24/challenge-24.ts) |
+| 25  | Execute the magical language  |       🟠       | [Show](https://adventjs.dev/challenges/2025/25) | [Go](./2025/challenge-25/challenge-25.ts) |
 
 </details>
 
